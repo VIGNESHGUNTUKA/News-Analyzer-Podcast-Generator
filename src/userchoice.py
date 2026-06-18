@@ -20,7 +20,7 @@ def category_selection():
                 continue
         break
     while True:
-        lan=int(input("SELECT THE LANGUAGE:\n1.ENGLISH\n2.TELUGU\n3.HINDI\n"))
+        lan=int(input("SELECT THE LANGUAGE:\n1.ENGLISH\n2.TELUGU\n3.HINDI\n4.TAMIL\n"))
         match lan:
             case 1:
                 language="English"
@@ -31,6 +31,9 @@ def category_selection():
             case 3:
                 language="Hindi"
                 lang_code="hi"
+            case 4:
+                language="Tamil"
+                lang_code="ta"
             case _:
                 print("Invalid Choice. Try Again.")
         break

@@ -1,25 +1,21 @@
-from config import category
+from config import CATEGORY_KEYWORDS
 from frequencyanalizer import most_freq_word
 
 def detect_category(keyword_lis):
-    score_dic = {
-    "Sports": 0,
-    "Health": 0,
-    "Technology": 0,
-    "Politics": 0,
-    "Business": 0,
-    "Entertainment": 0
-    }
+    score_dic = {}
+    for category in CATEGORY_KEYWORDS:
+        score_dic[category]=0
+
     # FINDING THE SCORE OF EACH CATEGORY
     for word in keyword_lis:
-        for cate,words in category.items():
+        for cate,words in CATEGORY_KEYWORDS.items():
             if word in words:
                 score_dic[cate]+=1
 
     # CHECKING FOR WINNER FROM THE SCORE DICTIONARY 
     freq,score=most_freq_word(score_dic)
     if score==0:
-        return []
+        return ["Uncategorized"]
     else:
         winner=[]
         for cate,count in score_dic.items():
