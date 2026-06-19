@@ -1,24 +1,22 @@
-def category_selection():
-    user_name=input("ENTER YOUR NAME: ").upper()
+def category_selection(name):
     while True:
-        choice=int(input(f"HELLO {user_name} SELECT THE NEWS CATEGORY:\n1.SPORTS\n2.HEALTH\n3.TECHNOLOGY\n4.MIXED\n"))
+        choice=int(input(f"HELLO {name} SELECT THE NEWS CATEGORY:\n1.SPORTS\n2.HEALTH\n3.TECHNOLOGY\n4.General\n"))
         match choice:
             case 1:
-                file_name = "data/sports.txt"
                 category = "Sports"
             case 2:
-                file_name = "data/health.txt"
                 category = "Health"
             case 3:
-                file_name = "data/technology.txt"
                 category = "Technology"
             case 4:
-                file_name = "data/mixed.txt"
-                category = "Mixed"
+                category = "General"
             case _:
                 print("Invalid Choice. Try Again.")
                 continue
         break
+    return category
+
+def language_selection():
     while True:
         lan=int(input("SELECT THE LANGUAGE:\n1.ENGLISH\n2.TELUGU\n3.HINDI\n4.TAMIL\n"))
         match lan:
@@ -36,7 +34,8 @@ def category_selection():
                 lang_code="ta"
             case _:
                 print("Invalid Choice. Try Again.")
+                continue
         break
-    return file_name,category,language,lang_code
+    return language,lang_code
 
 

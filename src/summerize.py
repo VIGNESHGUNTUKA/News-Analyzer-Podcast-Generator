@@ -1,7 +1,7 @@
 def summarize(text, keyword_lis):
 
     # SPLIT INTO SENTENCES
-    sentences = text.split(".")
+    sentences = text.split("\n")
 
     sentence_score = {}
 

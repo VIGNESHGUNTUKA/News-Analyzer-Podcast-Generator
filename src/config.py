@@ -52,3 +52,11 @@ CATEGORY_KEYWORDS = {
         "entertainment", "hollywood", "bollywood", "performance"
     }
 }
+# CONNECTORS BETWEEN THE LINES
+connectors = [
+        "Meanwhile,",
+        "In other news,",
+        "Moving on,",
+        "Additionally,",
+        "Another major story,"
+    ] 

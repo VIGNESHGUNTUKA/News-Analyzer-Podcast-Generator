@@ -1,5 +1,8 @@
-def generate_report(total, unique, top, category, freq, selected_cate, language,transulated_summary):
-    with open(f"output/{selected_cate}NewsReport_{language}.txt", "w", encoding="utf-8") as file:
+from datetime import datetime
+def generate_report_for_manual(total, unique, top, category, freq, language,transulated_summary):
+    timestamp=datetime.now().strftime("%d%m%Y_%H%M%S")
+    
+    with open(f"output/Report/{category}NewsReport_{language}.txt", "w", encoding="utf-8") as file:
         file.write("NEWS ANALYSER REPORT\n")
         file.write("================================================\n\n")
 
@@ -21,7 +24,7 @@ def generate_report(total, unique, top, category, freq, selected_cate, language,
         file.write(f"\nSUMMARY:\n{transulated_summary}\n")
 
         file.write("\nPODCAST FILE:\n")
-        file.write(f"{selected_cate}Podcast.mp3\n")
+        file.write(f"{category}Podcast.mp3\n")
 
         file.write("\n================================================\n")
         file.write("Report Generated Successfully")

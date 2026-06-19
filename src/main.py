@@ -1,68 +1,88 @@
+from config import STOP_WORDS
+from userchoice import category_selection,language_selection
 from textcleaner import cleaner
 from frequencyanalizer import freq
 from frequencyanalizer import most_freq_word
 from frequencyanalizer import top_5_words
-from config import stop_words
 from keywordextractor import extract_keyword
 from categorydetector import detect_category
-from reportgenerator import generate_report
-from userchoice import category_selection
+from ReportForManualNews import generate_report_for_manual
 from summerize import summarize
-from texttospeech import generate_audio
 from translator import translation
+from texttospeech import generate_audio
 
-# FUNCTIONS DECLARATION
-file_path,cate,language,lang_code=category_selection()
+from newscollector import collect_news
+from newsbreif import articles_to_text
+from ReportForAutomaticNews import generate_report_for_automatic
 
-with open(file_path, "r") as file:
-    data = file.read()
+user_name=input("ENTER YOUR NAME: ").upper()
 
-cleaned=cleaner(data)
+mode=int(input("SELECT THE MODE:\n1.PASTE THE NEWS\n2.AUTOMATIC NEWS\n"))
 
-words=cleaned.lower().split()
+if mode==1:
+    print("Paste your article below.\nType END on a new line when finished.")
+    data=""
+    while True:
+        line=input()
+        if line=="END":
+            break
+        else:
+            data+=line+"\n"
+    
+    cleaned=cleaner(data)
 
-dictionary=freq(words,stop_words)
+    words=cleaned.lower().split()
 
-freq_word,count=most_freq_word(dictionary)
+    dictionary=freq(words,STOP_WORDS)
 
-sorted_words=top_5_words(dictionary)
+    freq_word,count=most_freq_word(dictionary)
 
-keyword_lis=extract_keyword(sorted_words)
+    sorted_words=top_5_words(dictionary)
 
-winner=detect_category(keyword_lis)
+    keyword_lis=extract_keyword(sorted_words)
 
-summary=summarize(data,keyword_lis)
+    winner=detect_category(keyword_lis)
+    category="_".join(winner)
+    summary=summarize(data,keyword_lis)
 
-translated_summary=translation(summary,lang_code)
+    language,lang_code=language_selection()
 
-generate_report(
-    len(words),
-    len(dictionary),
-    keyword_lis[:5],
-    winner,freq_word,cate,
-    language,
-    translated_summary
-)
+    translated_summary=translation(summary,lang_code)
 
-generate_audio(translated_summary,cate,language,lang_code)
+    generate_report_for_manual(
+        len(words),
+        len(dictionary),
+        keyword_lis[:5],
+        winner,freq_word,
+        language,
+        translated_summary
+    )
 
-print(f"{cate} REPORT GENERATED SUCCESSFULLY!\nCHECK output/{cate}.txt FOR REPORT")
+    generate_audio(translated_summary,winner,language,lang_code)
 
-# PRINT STATEMENTS
-# print("Cleaned text:",cleaned)
-# print("-----------------------------------------------------------------------------------------------")
-# print("Dictionary:",dictionary)
-# print("-----------------------------------------------------------------------------------------------")
-# print("Total Words:", len(words))
-# print("-----------------------------------------------------------------------------------------------")
-# print("Unique Words:", len(dictionary))
-# print("-----------------------------------------------------------------------------------------------")
-# print("Most frequency word:",freq_word)
-# print("-----------------------------------------------------------------------------------------------")
-# print(sorted_words)
-# print("-----------------------------------------------------------------------------------------------")
-# print(keyword_lis)
-# print("-----------------------------------------------------------------------------------------------")
-# print(winner)
-# print("-----------------------------------------------------------------------------------------------")
-# print(translated_summary)
+    print(f"{category} REPORT GENERATED SUCCESSFULLY!\nCHECK output/{category}.txt FOR REPORT")
+
+else:
+    category=category_selection(user_name)
+
+    language,lang_code=language_selection()
+
+    articles,result=collect_news(category)
+    if result>20:
+        result=20
+    else:
+        result=result
+    if(result!=0):
+        summary=articles_to_text(articles,category,result)
+
+        translated_summary=translation(summary,lang_code)
+
+        generate_report_for_automatic(category,language,len(articles),translated_summary)
+
+        generate_audio(translated_summary,category,language,lang_code)
+    else:
+        print("THERE IS NO ARTICLES FOR SELECTED CATEGORY")
+
+    
+
+        
