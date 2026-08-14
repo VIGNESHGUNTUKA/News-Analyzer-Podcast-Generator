@@ -1,211 +1,545 @@
-# News Analyzer & Multilingual Podcast Generator
+# 🎙️ NewsPod – AI-Powered News Podcast Generator
 
-## Overview
+**NewsPod** is a multilingual news analysis and podcast generation application that collects news, analyzes and summarizes articles, translates the generated summary into the user's selected language, and converts the final content into an audio podcast using AI voices.
 
-News Analyzer & Multilingual Podcast Generator is a Python-based application that can analyze news articles, generate summaries, translate content into multiple languages, and create audio podcasts using text-to-speech technology.
-
-The project supports both manual news analysis and automatic news collection using NewsAPI. Users can either paste their own news article or automatically fetch the latest news from different categories and generate multilingual podcasts.
+The application supports both **manual news input** and **automatic news collection**.
 
 ---
 
-## Features
+## 🚀 Features
 
-### Manual News Analysis Mode
+### 📰 News Collection
 
-* Accepts user-pasted news articles
-* Cleans and preprocesses text
-* Removes stop words
-* Performs word frequency analysis
-* Extracts important keywords
-* Detects news category automatically
-* Generates article summary
-* Translates summary into selected language
-* Generates podcast audio with timestamp
-* Creates detailed analysis report with timestamp
+* Manual news input through pasted article text.
+* Automatic news collection using the **GNews API**.
+* Supports India-focused news collection.
+* Category-based news selection:
 
-### Automatic News Collection Mode
+  * Sports
+  * Health
+  * Technology
+  * General
+* Retrieves multiple articles for the selected category.
+* Removes duplicate articles before processing.
 
-* Fetches latest news using NewsAPI
-* Supports Sports, Health, Technology, and General News categories
-* Generates structured news briefs
-* Creates multilingual podcasts
-* Generates timestamped reports
-* Generates timestamped podcast files
+### 🧠 News Analysis
 
-### Translation Support
+The project processes the collected articles using:
+
+* Text cleaning
+* Stop-word removal
+* Keyword extraction
+* Frequency analysis
+* Category-based processing
+* Extractive summarization
+* Title and description processing
+
+The generated summary combines the most relevant information from the selected articles.
+
+### 🌍 Multilingual Support
+
+News can be generated in multiple languages:
 
 * English
 * Telugu
 * Hindi
 * Tamil
 
-### Podcast Generation
+The application translates the generated English summary into the selected language before generating the podcast.
 
-* Text-to-Speech conversion using gTTS
-* Multilingual audio generation
-* Category-based podcast creation
-* Intro and outro narration
+### 🎙️ AI Voice Selection
 
-### Reporting
+Users can choose between male and female AI voices.
 
-* News analysis reports
-* Automatic news reports
-* Timestamped report generation
-* Summary storage for future reference
+Currently supported voices include:
 
-### Error Handling
+| Language | Male Voice  | Female Voice |
+| -------- | ----------- | ------------ |
+| English  | Christopher | Aria         |
+| Telugu   | Mohan       | Shruti       |
+| Hindi    | Madhur      | Swara        |
+| Tamil    | Valluvar    | Pallavi      |
 
-* Invalid menu selection handling
-* Empty article handling
-* API response validation
-* Missing news handling
-* Translation and audio generation error handling
+Voice generation is implemented using **Microsoft Edge TTS**.
 
----
+### 🎧 Podcast Generation
 
-## Technologies Used
+The application converts the translated summary into an MP3 podcast.
 
-* Python
-* NewsAPI
-* gTTS (Google Text-to-Speech)
-* deep-translator
-* requests
-* python-dotenv
+Generated podcasts include:
 
----
+* Selected category
+* Selected language
+* Selected voice
+* Timestamp
 
-## Project Workflow
+Example:
 
-### Manual News Mode
+```text
+SportsPodcast_14082026_160006.mp3
+```
 
-User Pastes News Article
-↓
-Text Cleaning
-↓
-Word Frequency Analysis
-↓
-Keyword Extraction
-↓
-Category Detection
-↓
-Summary Generation
-↓
-Language Selection
-↓
-Translation
-↓
-Podcast Generation
-↓
-Timestamped Report Generation
+### 📄 Report Generation
 
----
+A text report is generated for each podcast.
 
-### Automatic News Mode
+Reports contain:
 
-User Selects Category
-↓
-NewsAPI Fetches Latest News
-↓
-News Brief Generation
-↓
-Language Selection
-↓
-Translation
-↓
-Podcast Generation
-↓
-Timestamped Report Generation
+* Category
+* Language
+* Number of articles
+* Generated summary
+* Podcast filename
+
+Example:
+
+```text
+SportsNewsreport_Telugu_14082026_160006.txt
+```
+
+### 🌐 Web Application
+
+The project is being developed as a web application with:
+
+* Frontend UI
+* FastAPI backend
+* REST API endpoints
+* Podcast generation
+* Audio playback
+* Podcast listing
+* CORS support
 
 ---
 
-## Supported Categories
+# 🏗️ Project Architecture
 
-* Sports
-* Health
-* Technology
-* General News
+```text
+                    ┌─────────────────────┐
+                    │       NewsPod       │
+                    │    Web Interface    │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │    FastAPI Backend  │
+                    └──────────┬──────────┘
+                               │
+              ┌────────────────┴────────────────┐
+              │                                 │
+              ▼                                 ▼
+      ┌───────────────┐                 ┌───────────────┐
+      │  Manual News  │                 │ Automatic News│
+      └───────┬───────┘                 └───────┬───────┘
+              │                                 │
+              │                                 ▼
+              │                           ┌────────────┐
+              │                           │  GNews API │
+              │                           └─────┬──────┘
+              │                                 │
+              └──────────────┬──────────────────┘
+                             ▼
+                    ┌─────────────────┐
+                    │ Text Processing │
+                    └────────┬────────┘
+                             ▼
+                    ┌─────────────────┐
+                    │   Summarization │
+                    └────────┬────────┘
+                             ▼
+                    ┌─────────────────┐
+                    │   Translation   │
+                    └────────┬────────┘
+                             ▼
+                    ┌─────────────────┐
+                    │    Edge TTS     │
+                    └────────┬────────┘
+                             ▼
+                    ┌─────────────────┐
+                    │   MP3 Podcast   │
+                    └─────────────────┘
+```
 
 ---
 
-## Project Structure
+# 📁 Project Structure
 
 ```text
 News_Podcast/
 │
-├── src/
-│   ├── main.py
-│   ├── newscollector.py
-│   ├── newsbrief.py
-│   ├── translator.py
-│   ├── texttospeech.py
-│   ├── reportgenerator.py
-│   ├── userchoice.py
-│   ├── cleaner.py
-│   ├── summarizer.py
-│   └── config.py
+├── BackEnd/
+│   │
+│   ├── data/
+│   │   └── sports_news.json
+│   │
+│   ├── output/
+│   │   ├── Podcast/
+│   │   └── Report/
+│   │
+│   └── src/
+│       ├── app.py
+│       ├── main.py
+│       ├── newscollector.py
+│       ├── news_storage.py
+│       ├── userchoice.py
+│       ├── config.py
+│       ├── translator.py
+│       ├── texttospeech.py
+│       ├── textcleaner.py
+│       ├── frequencyanalizer.py
+│       ├── keywordextractor.py
+│       ├── categorydetector.py
+│       ├── summary.py
+│       └── ...
 │
-├── data/
-│   └── JSON files collected from NewsAPI
-│
-├── output/
-│   ├── reports/
-│   └── podcasts/
+├── UI/
+│   ├── index.html
+│   ├── app.js
+│   └── style.css
 │
 ├── .env
+├── .gitignore
+├── requirements.txt
+├── Procfile
 └── README.md
 ```
 
 ---
 
-## Installation
+# 🔄 Application Workflow
 
-### Clone the Repository
+## Manual Mode
 
-```bash
-git clone <repository-url>
-cd News_Podcast
+```text
+User
+ ↓
+Enter News
+ ↓
+Select Language
+ ↓
+Select Voice
+ ↓
+Clean Text
+ ↓
+Analyze News
+ ↓
+Generate Summary
+ ↓
+Translate Summary
+ ↓
+Generate Podcast
+ ↓
+Save Report + MP3
 ```
 
-### Configure Environment Variables
+## Automatic Mode
 
-Create a `.env` file:
-
-```env
-NEWS_API_KEY=your_api_key_here
+```text
+User
+ ↓
+Select Category
+ ↓
+Select Language
+ ↓
+Select Voice
+ ↓
+GNews API
+ ↓
+Fetch Articles
+ ↓
+Remove Duplicates
+ ↓
+Extract Title + Description
+ ↓
+Generate Summary
+ ↓
+Translate Summary
+ ↓
+Generate Podcast
+ ↓
+Save Report + MP3
 ```
 
 ---
 
-## How to Run
+# 🔊 Supported Voice Selection
+
+### English
+
+```text
+Male   → en-US-ChristopherNeural
+Female → en-US-AriaNeural
+```
+
+### Telugu
+
+```text
+Male   → te-IN-MohanNeural
+Female → te-IN-ShrutiNeural
+```
+
+### Hindi
+
+```text
+Male   → hi-IN-MadhurNeural
+Female → hi-IN-SwaraNeural
+```
+
+### Tamil
+
+```text
+Male   → ta-IN-ValluvarNeural
+Female → ta-IN-PallaviNeural
+```
+
+---
+
+# 🛠️ Technologies Used
+
+### Backend
+
+* Python
+* FastAPI
+* Uvicorn
+* Requests
+* GNews API
+* Python-dotenv
+
+### Natural Language Processing
+
+* Text preprocessing
+* Stop-word removal
+* Keyword extraction
+* Frequency analysis
+* Extractive summarization
+* Deep Translator
+
+### Text-to-Speech
+
+* Microsoft Edge TTS
+
+### Frontend
+
+* HTML
+* CSS
+* JavaScript
+
+### Development Tools
+
+* Git
+* GitHub
+* Virtual Environment
+* VS Code
+
+---
+
+# 📦 Installation
+
+## 1. Clone the Repository
 
 ```bash
+git clone https://github.com/VIGNESHGUNTUKA/News-Analyzer-Podcast-Generator.git
+```
+
+```bash
+cd News-Analyzer-Podcast-Generator
+```
+
+---
+
+## 2. Create a Virtual Environment
+
+The project uses Python 3.11.
+
+```bash
+python -m venv .venv
+```
+
+### Windows PowerShell
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+---
+
+## 3. Install Dependencies
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+---
+
+# 🔐 Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+GNEWS_API_KEY=your_gnews_api_key
+```
+
+The API key should not be committed to GitHub.
+
+---
+
+# ▶️ Running the Application
+
+## Run the command-line application
+
+From the project root:
+
+```bash
+cd BackEnd
 python src/main.py
 ```
 
+## Run the FastAPI backend
+
+From the project root:
+
+```bash
+uvicorn BackEnd.src.app:app --reload
+```
+
+The backend will be available locally through the FastAPI server.
+
 ---
 
-## Sample Output
+# 🔌 API Endpoints
 
-### Podcast Introduction
+The FastAPI backend provides endpoints for:
+
+### Get Headlines
 
 ```text
-Welcome to today's Sports Podcast.
+GET /api/headlines
+```
 
-First, the New York Knicks are expected to visit the White House following their NBA championship victory.
+### Generate Manual Podcast
 
-Meanwhile, World Cup 2026 continues to generate excitement around the globe.
+```text
+POST /api/generate/manual
+```
 
-Thank you for listening. Stay tuned for more updates.
+### Generate Automatic Podcast
+
+```text
+POST /api/generate/automatic
+```
+
+### Get Podcasts
+
+```text
+GET /api/podcasts
+```
+
+### Play Audio
+
+```text
+GET /api/audio/{filename}
 ```
 
 ---
 
-## Future Enhancements
+# 📊 Example
 
-* Improved podcast narration
-* Additional language support
-* Web-based interface
-* AI-powered news rewriting
-* Personalized news recommendations
-* Podcast history management
+A user can select:
 
+```text
+Category: Sports
+Language: Telugu
+Voice: Male
+```
+
+NewsPod then:
+
+```text
+Fetches Sports News
+        ↓
+Removes duplicate articles
+        ↓
+Processes the articles
+        ↓
+Generates a summary
+        ↓
+Translates the summary to Telugu
+        ↓
+Uses the selected Telugu AI voice
+        ↓
+Creates an MP3 podcast
+```
+
+Example output:
+
+```text
+SportsPodcast_Telugu_14082026_160006.mp3
+```
+
+---
+
+# 🔒 Git Ignore
+
+Sensitive and generated files are excluded from Git:
+
+```text
+__pycache__/
+*.pyc
+output/
+.env
+*.mp3
+*.json
+.venv/
+```
+
+---
+
+# 🚧 Future Improvements
+
+The following features are planned for future versions:
+
+* [ ] Database integration for podcast history
+* [ ] Improved natural-language podcast scripts
+* [ ] AI-based news rewriting
+* [ ] Better multilingual narration
+* [ ] Personalized news recommendations
+* [ ] Podcast favorites/bookmarks
+* [ ] News source information in the UI
+* [ ] Podcast download option
+* [ ] User accounts
+* [ ] Daily personalized podcasts
+* [ ] Multiple podcast durations
+* [ ] Cloud deployment
+
+---
+
+# 🎯 Project Goal
+
+The goal of **NewsPod** is to make daily news easier to consume by transforming written news into personalized audio podcasts.
+
+Instead of reading multiple news articles, users can:
+
+```text
+Choose a category
+       ↓
+Choose a language
+       ↓
+Choose a voice
+       ↓
+Generate
+       ↓
+Listen
+```
+
+**NewsPod — Your News. Your Language. Your Voice.** 🎙️
+
+---
+
+# 👨‍💻 Author
+
+**Guntuka Vignesh**
+
+B.Tech – Computer Science and Machine Learning
+
+GitHub:
+
+https://github.com/VIGNESHGUNTUKA
