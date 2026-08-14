@@ -1,3 +1,4 @@
+from config import voices
 def category_selection(name):
     while True:
         choice=int(input(f"HELLO {name} SELECT THE NEWS CATEGORY:\n1.SPORTS\n2.HEALTH\n3.TECHNOLOGY\n4.General\n"))
@@ -38,4 +39,19 @@ def language_selection():
         break
     return language,lang_code
 
+def voice_selection(language):
+    while True:
+        gender = input("SELECT THE VOICE (MALE/FEMALE): ").lower()
 
+        match gender:
+            case "male":
+                voice = voices[language]["Male"]
+            case "female":
+                voice = voices[language]["Female"]
+            case _:
+                print("Invalid Choice. Try Again.")
+                continue
+
+        break
+
+    return voice

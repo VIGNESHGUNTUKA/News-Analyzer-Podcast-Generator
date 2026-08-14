@@ -1,5 +1,5 @@
 from config import STOP_WORDS
-from userchoice import category_selection,language_selection
+from userchoice import category_selection,language_selection,voice_selection
 from textcleaner import cleaner
 from frequencyanalizer import freq
 from frequencyanalizer import most_freq_word
@@ -47,6 +47,8 @@ if mode==1:
 
     language,lang_code=language_selection()
 
+    voice=voice_selection(language) 
+
     translated_summary=translation(summary,lang_code)
 
     generate_report_for_manual(
@@ -55,10 +57,10 @@ if mode==1:
         keyword_lis[:5],
         winner,freq_word,
         language,
-        translated_summary
+        translated_summary,
     )
 
-    generate_audio(translated_summary,winner,language,lang_code)
+    generate_audio(translated_summary,winner,language,lang_code,voice)
 
     print(f"{category} REPORT GENERATED SUCCESSFULLY!\nCHECK output/{category}.txt FOR REPORT")
 
@@ -67,9 +69,13 @@ else:
 
     language,lang_code=language_selection()
 
+    voice=voice_selection(language)
+
     articles,result=collect_news(category)
     if result>20:
         result=20
+    elif result == 0:
+        print("No news articles found for this category.")
     else:
         result=result
     if(result!=0):
@@ -79,7 +85,7 @@ else:
 
         generate_report_for_automatic(category,language,len(articles),translated_summary)
 
-        generate_audio(translated_summary,category,language,lang_code)
+        generate_audio(translated_summary,category,language,lang_code,voice)
     else:
         print("THERE IS NO ARTICLES FOR SELECTED CATEGORY")
 

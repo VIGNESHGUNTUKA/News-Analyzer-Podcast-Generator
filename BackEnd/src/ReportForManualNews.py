@@ -6,7 +6,7 @@ def generate_report_for_manual(total, unique, top, category, freq, language,tran
         file.write("NEWS ANALYSER REPORT\n")
         file.write("================================================\n\n")
 
-        file.write(f"CATEGORY:\n{",".join(category)}\n")
+        file.write(f"CATEGORY:\n{', '.join(category)}\n")
 
         file.write(f"\nTOP KEYWORDS:\n")
         

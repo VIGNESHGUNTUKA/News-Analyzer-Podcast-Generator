@@ -1,7 +1,8 @@
 # STOPPING WORDS(IS,WAS,THE,....)
 STOP_WORDS = {
     "the", "a", "an", "and", "for",
-    "in", "of", "to", "is", "was" ,"after"
+    "in", "of", "to", "is", "was", "after", "on", "by",
+    "with", "from", "at", "as",
 }
 # CATEGORY DETECTION 
 CATEGORY_KEYWORDS = {
@@ -60,3 +61,23 @@ connectors = [
         "Additionally,",
         "Another major story,"
     ] 
+
+# Different Voices
+voices= {
+    "English":{
+        "Male": "en-US-ChristopherNeural",
+        "Female": "en-US-AriaNeural"
+    },
+    "Telugu": {
+        "Male": "te-IN-MohanNeural",
+        "Female": "te-IN-ShrutiNeural"
+    },
+    "Hindi": {
+        "Male": "hi-IN-MadhurNeural",
+        "Female": "hi-IN-SwaraNeural"
+    },
+    "Tamil": {
+        "Male": "ta-IN-ValluvarNeural",
+        "Female": "ta-IN-PallaviNeural"
+    }
+}

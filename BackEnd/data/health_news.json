@@ -1,0 +1,160 @@
+{
+    "information": {
+        "realTimeArticles": {
+            "message": "Real-time news data is only available on paid plans. Free plan has a 12-hour delay. Upgrade your plan here to remove the delay: https://gnews.io/change-plan"
+        }
+    },
+    "totalArticles": 188074,
+    "articles": [
+        {
+            "id": "b402895749ac61205882da1103c7afc7",
+            "title": "25 dead in 5 weeks in Gujarat, experts clueless about Chandipura virus outbreak",
+            "description": "The investigations have expanded to blood samples of cattle, goats and milk, after results from sandflies, mosquitoes, ticks returned negative, according to the union health ministry",
+            "content": "The Chandipura Vesiculovirus (CHPV) largely impacts children below 15 years old, manifesting as Acute Encephalitis Syndrome (AES) and has so far caused fatalities in Gujarat and Rajasthan.\nThe more disquieting detail is that sandflies are endemic to ... [6174 chars]",
+            "url": "https://indianexpress.com/article/cities/ahmedabad/chandipura-virus-experts-clueless-spread-10830912/",
+            "image": "https://images.indianexpress.com/2026/08/chandipura-virus-2.jpg",
+            "publishedAt": "2026-08-13T22:32:00Z",
+            "lang": "en",
+            "source": {
+                "id": "fb9b2a133349e3c8aa9c4ccde8d9400c",
+                "name": "The Indian Express",
+                "url": "https://indianexpress.com"
+            }
+        },
+        {
+            "id": "743d32b7791b0bf426d936834901c6a1",
+            "title": "Not a flex: Here’s what the internet keeps getting wrong about protein",
+            "description": "We’re so obsessed with protein, the world is literally running out of it. Before you reach for one more scoop, here are five myths that need busting",
+            "content": "Deep breaths. We were just figuring out our relationship with fibre. Now we’re worrying about protein. It’s in everything: Chips, water, coffee, a McDonald’s burger. Weight-training gymmers are obsessed about consuming 50 grams a day, or 40, or whate... [4529 chars]",
+            "url": "https://www.hindustantimes.com/lifestyle/brunch/not-a-flex-here-s-what-the-internet-keeps-getting-wrong-about-protein-101786647664266.html",
+            "image": "https://www.hindustantimes.com/ht-img/img/2026/08/13/1600x900/logo/Every-Reel-and-post-has-some-magic-mantra--But-pro_1786647658698.jpg",
+            "publishedAt": "2026-08-13T21:42:14Z",
+            "lang": "en",
+            "source": {
+                "id": "d32e3679b6a53eca83b3406e364c0d26",
+                "name": "hindustantimes.com",
+                "url": "https://www.hindustantimes.com"
+            }
+        },
+        {
+            "id": "3068d555c63e3a0af75e77e10c72b87f",
+            "title": "What the Fitness Industry’s ‘Inflection Point’ Means for Fashion",
+            "description": "Raquel Rozas, chief marketing officer of iFit, shares how consumers' approach to fitness is changing.",
+            "content": "How consumers prioritize and practice fitness is evolving, according to iFit chief marketing officer Raquel Rozas.\nA greater share of individuals are exercising at least once a week, and they are looking toward for health rather than aesthetic goals.... [2341 chars]",
+            "url": "https://wwd.com/voices/retailrx/consumer-fitness-trends-pilates-wellness-retailrx-ifit-1239121905/",
+            "image": "https://wwd.com/wp-content/uploads/2026/08/iFITPodcastPromo.png?w=1000&h=563&crop=1",
+            "publishedAt": "2026-08-13T20:51:32Z",
+            "lang": "en",
+            "source": {
+                "id": "14797ede1e233c4f6dd89b2cbda5ffa8",
+                "name": "WWD",
+                "url": "https://wwd.com"
+            }
+        },
+        {
+            "id": "b25502afc51973c878c8e16631a7d6ac",
+            "title": "Ebola tracing improves in DR Congo - but the virus is still winning the race",
+            "description": "Health authorities in the Democratic Republic of the Congo (DRC) are tracking a growing share of people exposed to Ebola, but the epidemic in the country's restive east continues to outpace their ability to find and isolate the sick, the World Health Organization (WHO) has warned.",
+            "content": "In its latest update, published Thursday, WHO said hidden chains of transmission are being fuelled by patients who reach advanced stages of the disease without ever receiving care.\nDeaths are still occurring outside health facilities and known transm... [2738 chars]",
+            "url": "https://news.un.org/en/story/2026/08/1168137",
+            "image": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/07/22-07-2026-OCHA-DRC-Ebola-01.jpg/image770x420cropped.jpg",
+            "publishedAt": "2026-08-13T19:56:20Z",
+            "lang": "en",
+            "source": {
+                "id": "81925310763e66b0ad732998459fe288",
+                "name": "UN News",
+                "url": "https://news.un.org"
+            }
+        },
+        {
+            "id": "90643109fa62b5ca43e7591de1553894",
+            "title": "Chandipura outbreak claimed 27 lives in Gujarat: Govt",
+            "description": "Gujarat Chandipura virus outbreak: 27 deaths, 41 positive cases among 242 suspected; two patients hospitalized as state ramps up sandfly control drive.",
+            "content": "AMC Health worker spreading Medicine and do survey after found Chandipura virus at Rabari Chali near Motera area of Ahmedabad on Tuesday,23,July,2024 Photo Yogesh Chawda\nAhmedabad: The Chandipura virus outbreak in Gujarat has claimed 27 lives in the ... [2056 chars]",
+            "url": "https://timesofindia.indiatimes.com/city/ahmedabad/chandipura-outbreak-claimed-27-lives-in-gujarat-govt/articleshow/133222240.cms",
+            "image": "https://static.toiimg.com/thumb/msid-133222238,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "publishedAt": "2026-08-13T18:35:00Z",
+            "lang": "en",
+            "source": {
+                "id": "9c931d3332c3a87c89b804230892aa64",
+                "name": "The Times of India",
+                "url": "https://timesofindia.indiatimes.com"
+            }
+        },
+        {
+            "id": "45db566c42f2c005121d833e2c9b9bd7",
+            "title": "Shweta Bansal: SIOP Asia 2026 Research, Shared Knowledge, and What Comes Next?",
+            "description": "Shweta Bansal: SIOP Asia 2026 Research, Shared Knowledge, and What Comes Next? / cancer, cancer care, clinical learning, Gevorg Tamamyan, India, OncoDaily,",
+            "content": "Shweta Bansal, Head of Department at Sir H.N. Reliance Foundation Hospital and Research Centre, shared on LinkedIn:\n“Taking Learning Beyond the Conference\nOne of the key objectives of the PHO National Teaching Programme is to create continuous opport... [773 chars]",
+            "url": "https://oncodaily.com/voices/shweta-bansal-565508",
+            "image": "https://oncodaily.com/pub/uploads/2026/08/shw1.webp",
+            "publishedAt": "2026-08-13T18:13:38Z",
+            "lang": "en",
+            "source": {
+                "id": "654c15cf5fba9c885b59fdc406129149",
+                "name": "Oncodaily",
+                "url": "https://oncodaily.com"
+            }
+        },
+        {
+            "id": "c67d28a18ef2feca63c99078f74b16ac",
+            "title": "Smokers lack awareness of smoking-related cardiovascular risks",
+            "description": "An international study has found that despite two decades of global tobacco control efforts, the message still is not getting through to enough smokers that smoking and second-hand smoke cause heart attack and stroke.",
+            "content": "An international study has found that despite two decades of global tobacco control efforts, the message still is not getting through to enough smokers that smoking and second-hand smoke cause heart attack and stroke.\nResearchers at the University of... [2990 chars]",
+            "url": "https://www.news-medical.net/news/20260813/Smokers-lack-awareness-of-smoking-related-cardiovascular-risks.aspx",
+            "image": "https://www.news-medical.net/images/tags/TagImage-2853-45847040760138896314-620x480.jpg",
+            "publishedAt": "2026-08-13T17:41:00Z",
+            "lang": "en",
+            "source": {
+                "id": "f2ca7a45d20357cb42858868cb4a4946",
+                "name": "News-Medical",
+                "url": "https://www.news-medical.net"
+            }
+        },
+        {
+            "id": "511d24f5604ac42616d5fdcf3f7601a1",
+            "title": "Holistic care, support and continuous interventions required for children with Autism Spectrum Disorder: experts",
+            "description": "Experts emphasize the need for holistic, continuous care and support for children with Autism Spectrum Disorder throughout their lives.",
+            "content": "Early intervention and continued therapies over time can produce meaningful and optimal outcomes in children with autism spectrum disorders, including better socialisation and communication skills, cognitive abilities, motor abilities and challenging... [2270 chars]",
+            "url": "https://www.thehindu.com/news/national/kerala/holistic-care-support-and-continuous-interventions-required-for-children-with-autism-spectrum-disorder-experts/article71341594.ece",
+            "image": "https://th-i.thgim.com/public/incoming/kdbjje/article71341997.ece/alternates/LANDSCAPE_1200/IMG_iStock-1312417650_2_1_OHATBL4R.jpg",
+            "publishedAt": "2026-08-13T15:15:02Z",
+            "lang": "en",
+            "source": {
+                "id": "b186b851cfda2f4463224771573fadf2",
+                "name": "The Hindu",
+                "url": "https://www.thehindu.com"
+            }
+        },
+        {
+            "id": "0133f61a6a3414c85614e863a01e2858",
+            "title": "SSO Cancer Hospitals Launches Head And Neck Cancer Centre With Jonty Rhodes",
+            "description": "SSO Cancer Hospitals launches a Head & Neck Cancer Centre in Mumbai, integrating advanced surgery, multidisciplinary care, research and education.",
+            "content": "SSO Cancer Hospitals has launched a dedicated Head & Neck Cancer Centre of Excellence in Mumbai, bringing specialised oncology, advanced surgery, reconstruction, multidisciplinary treatment, research and education under one integrated platform.\nThe C... [2547 chars]",
+            "url": "https://www.bwhealthcareworld.com/article/sso-cancer-hospitals-launches-head-and-neck-cancer-centre-with-jonty-rhodes-619257",
+            "image": "https://static.businessworld.in/rewrite 6_20260813180534_ogImage_28.png",
+            "publishedAt": "2026-08-13T14:19:57Z",
+            "lang": "en",
+            "source": {
+                "id": "9615c9d1df641811ae145679be64559a",
+                "name": "bwhealthcareworld.com",
+                "url": "https://www.bwhealthcareworld.com"
+            }
+        },
+        {
+            "id": "f6b66e11cfcb6a5d315437c4df6c2388",
+            "title": "A Deadly Fungus Has Found the Perfect Hiding Place: Human Hair Follicles",
+            "description": "UCSF researchers are beginning to uncover how Candida auris, a skin fungus, threatens the most vulnerable patients.",
+            "content": "UCSF researchers are beginning to uncover how Candida auris, a skin fungus, threatens the most vulnerable patients.\nA fungus that can live unnoticed on human skin has become a serious threat in hospitals around the world. First identified in Japan in... [3819 chars]",
+            "url": "https://scitechdaily.com/a-deadly-fungus-has-found-the-perfect-hiding-place-human-hair-follicles/",
+            "image": "https://scitechdaily.com/images/Human-Hair-Close-Up-777x518.jpg",
+            "publishedAt": "2026-08-13T13:46:21Z",
+            "lang": "en",
+            "source": {
+                "id": "68731ff9e39259c4191d23f5faee25eb",
+                "name": "SciTechDaily",
+                "url": "https://scitechdaily.com"
+            }
+        }
+    ]
+}

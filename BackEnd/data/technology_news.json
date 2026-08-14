@@ -1,0 +1,160 @@
+{
+    "information": {
+        "realTimeArticles": {
+            "message": "Real-time news data is only available on paid plans. Free plan has a 12-hour delay. Upgrade your plan here to remove the delay: https://gnews.io/change-plan"
+        }
+    },
+    "totalArticles": 319506,
+    "articles": [
+        {
+            "id": "3d42fbeb517e0ded5152620ce5031499",
+            "title": "iPhone manufacturer says base iPhone 18 won't launch until 2027",
+            "description": "Apple's iPhone 18 launch could be split into two stages, with Pegatron saying the Pro models are still on track for September while the standard version may be delayed until early 2027. Memory and chip shortages are reportedly behind the unusual schedule.",
+            "content": "Rumors of a split iPhone 18 launch have been circulating for months, with the high-end Pro models expected to arrive in September and the standard version reportedly following in early 2027. Now, those reports have received what is essentially offici... [1902 chars]",
+            "url": "https://www.notebookcheck.net/iPhone-manufacturer-says-base-iPhone-18-won-t-launch-until-2027.1368078.0.html",
+            "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Apple-iPhone-17-Pro_02.webp",
+            "publishedAt": "2026-08-13T20:58:00Z",
+            "lang": "en",
+            "source": {
+                "id": "6f43ddc905277d3cab59591df0bcaa6d",
+                "name": "Notebookcheck",
+                "url": "https://www.notebookcheck.net"
+            }
+        },
+        {
+            "id": "b47a05616e3644460f8907c4a561cf7b",
+            "title": "Akira hackers disable EDR with Safe Mode, steal data but fail to encrypt",
+            "description": "An Akira ransomware affiliate disabled the endpoint detection and response (EDR) solution on a compromised system by restarting the machine into Safe Mode with Networking.",
+            "content": "An Akira ransomware affiliate disabled the endpoint detection and response (EDR) solution on a compromised system by restarting the machine into Safe Mode with Networking.\nThe attack occurred on August 4 after the hacker obtained initial access throu... [2368 chars]",
+            "url": "https://www.bleepingcomputer.com/news/security/akira-hackers-disable-edr-with-safe-mode-steal-data-but-fail-to-encrypt/",
+            "image": "https://www.bleepstatic.com/content/hl-images/2025/02/12/ransomware-3.jpg",
+            "publishedAt": "2026-08-13T20:47:02Z",
+            "lang": "en",
+            "source": {
+                "id": "e9b427d05babd60d5abc63ffc14091c8",
+                "name": "BleepingComputer",
+                "url": "https://www.bleepingcomputer.com"
+            }
+        },
+        {
+            "id": "ea36598f74ecc9ac17c30bf62de877e5",
+            "title": "Microsoft Outlook Vulnerability Allows Attackers to Execute Malicious Code Remotely",
+            "description": "Microsoft has disclosed a new remote code execution flaw in Outlook, tracked as CVE-2026-70329, as part of its August 2026 Patch Tuesday rollout.",
+            "content": "Microsoft has disclosed a new remote code execution flaw in Outlook, tracked as CVE-2026-70329, as part of its August 2026 Patch Tuesday rollout. The vulnerability stems from an integer overflow or wraparound weakness in Microsoft Office Outlook, and... [3100 chars]",
+            "url": "https://cybersecuritynews.com/microsoft-outlook-rce-vulnerability-2/",
+            "image": "http://cybersecuritynews.com/wp-content/uploads/2026/08/Microsoft-Outlook-RCE-Vulnerability1.webp",
+            "publishedAt": "2026-08-13T18:19:33Z",
+            "lang": "en",
+            "source": {
+                "id": "f72ff1db5bd129a8ceb92573b4717118",
+                "name": "cybersecuritynews.com",
+                "url": "https://cybersecuritynews.com"
+            }
+        },
+        {
+            "id": "89c48fed78296dc7a517d71b0eb4ac2f",
+            "title": "Apple Secures Nearly 40% Cheaper OLED Panels for iPhone 18 Pro Max",
+            "description": "Apple has reportedly cut iPhone 18 Pro Max OLED panel costs from up to $120 to $68 as rising RAM prices increase production costs.",
+            "content": "Apple has reportedly secured much lower OLED display prices for the upcoming iPhone 18 Pro models as rising memory costs put more pressure on iPhone production. The company is pushing suppliers to cut component prices as expensive RAM chips increase ... [1569 chars]",
+            "url": "https://www.macobserver.com/news/apple-secures-nearly-40-cheaper-oled-panels-for-iphone-18-pro-max/",
+            "image": "https://www.macobserver.com/wp-content/uploads/2025/06/Apple-Supplier-BOE-Scales-OLED-Production-.jpg",
+            "publishedAt": "2026-08-13T18:00:32Z",
+            "lang": "en",
+            "source": {
+                "id": "1f9e17d7f8b4462e5f2413ec925d46ea",
+                "name": "The Mac Observer",
+                "url": "https://www.macobserver.com"
+            }
+        },
+        {
+            "id": "3f33396fd905f93b9b1a0de76cde0568",
+            "title": "Google AI Just Released Gemini 3.7 Flash: A Coding and Agent Model at $0.75/1M Input Tokens",
+            "description": "Google DeepMind releases Gemini 3.7 Flash, a coding and agent model with 1M context, priced at $0.75/1M input.",
+            "content": "Google has released Gemini 3.7 Flash, the newest model in its Flash tier, three weeks after Gemini 3.6 Flash. The model card describes it as a refinement of 3.6 Flash with algorithmic improvements to the core reasoning foundation — not a new pretrain... [3954 chars]",
+            "url": "https://www.marktechpost.com/2026/08/13/google-ai-just-released-gemini-3-7-flash/",
+            "image": "https://www.marktechpost.com/wp-content/uploads/2026/08/blog619100-5.png",
+            "publishedAt": "2026-08-13T17:47:41Z",
+            "lang": "en",
+            "source": {
+                "id": "d5d7f0a3b0f2a346f12f467a794eb8d3",
+                "name": "MarkTechPost",
+                "url": "https://www.marktechpost.com"
+            }
+        },
+        {
+            "id": "bf20d96df5ac1c200376bd787b13b48e",
+            "title": "Microsoft patches LegacyHive Windows zero-day vulnerability",
+            "description": "Microsoft has released security patches to address a Windows zero-day vulnerability known as",
+            "content": "Microsoft has released security patches to address a Windows zero-day vulnerability known as \"LegacyHive,\" disclosed after the July 2026 Patch Tuesday.\nThe security flaw was disclosed by a security researcher who uses the \"Nightmare Eclipse\" handle i... [2477 chars]",
+            "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-legacyhive-windows-zero-day-vulnerability/",
+            "image": "https://www.bleepstatic.com/content/hl-images/2026/03/10/Windows.jpg",
+            "publishedAt": "2026-08-13T17:46:20Z",
+            "lang": "en",
+            "source": {
+                "id": "e9b427d05babd60d5abc63ffc14091c8",
+                "name": "BleepingComputer",
+                "url": "https://www.bleepingcomputer.com"
+            }
+        },
+        {
+            "id": "5f281a8601314c93839322610de1fb35",
+            "title": "The new Instagram logo is the perfect embodiment of AI slop",
+            "description": "Opinion: Some remarks about the new wordmark accidentally being perfectly awful.",
+            "content": "Today, Instagram unveiled a refresh of its wordmark, accompanied by the usual bland corporate platitudes these kinds of announcements are always packaged with.\nHead of Instagram Adam Mosseri called it “leaner and more modern, with references to the o... [1616 chars]",
+            "url": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/",
+            "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/instagram-2026-wordmark.png",
+            "publishedAt": "2026-08-13T17:32:10Z",
+            "lang": "en",
+            "source": {
+                "id": "344add8dabb753d03641ce9f246787ad",
+                "name": "Ars Technica",
+                "url": "https://arstechnica.com"
+            }
+        },
+        {
+            "id": "a4e0e79f3833e4136e58a57dd92a49fe",
+            "title": "Tecno POVA 8 Pro 5G Prepares For Launch In India",
+            "description": "Tecno POVA 8 Pro 5G launches in India with a rear display, Dimensity 7400 chipset, 144Hz AMOLED screen and 6500mAh battery.",
+            "content": "Tecno is gearing up to launch a new device, the Tecno POVA 8 Pro 5G, in India as well as other markets. This coming device will succeed the POVA 7, improving on performance but keeping some design elements.\nThis coming device will be a mid-range devi... [3196 chars]",
+            "url": "https://techgenyz.com/tecno-pova-8-pro-5g-india-launch-features/",
+            "image": "https://techgenyz.com/wp-content/uploads/2026/08/tecno-pova-8-pro-5g.webp",
+            "publishedAt": "2026-08-13T17:10:55Z",
+            "lang": "en",
+            "source": {
+                "id": "9710fd0a8060ce716a3567901da14e9a",
+                "name": "Techgenyz",
+                "url": "https://techgenyz.com"
+            }
+        },
+        {
+            "id": "8a98640202a92362f82bccc02877c501",
+            "title": "WhatsApp tests on-device AI Scam Alert for suspicious messages",
+            "description": "WhatsApp is testing Scam Alert, an optional on-device machine-learning feature that warns users about potential scam messages without sending message content to its servers.",
+            "content": "WhatsApp is testing a new feature designed to warn users about potentially fraudulent messages without sending the contents of their conversations to its servers.\nCalled Scam Alert, the optional tool uses a machine-learning model that runs directly o... [2567 chars]",
+            "url": "https://t2online.in/tech/tech-news/whatsapp-tests-scam-alert-to-detect-suspicious-messages-on-your-device/2007236",
+            "image": "https://images.t2online.in/cdn-cgi/image/width=1280,height=720,fit=crop,gravity=auto,quality=70/https://apis.t2online.in/getImageStream/8436/1786640607633.jpg",
+            "publishedAt": "2026-08-13T17:01:00Z",
+            "lang": "en",
+            "source": {
+                "id": "92bb3036dd91749dde09b90d23c9a7ba",
+                "name": "t2ONLINE",
+                "url": "https://t2online.in"
+            }
+        },
+        {
+            "id": "bf825857e7f605f1fdf32291f433a942",
+            "title": "Apple Arcade Reveals Exciting Puzzle Games Update With Block Blast!+ and Art of Fauna+",
+            "description": "Apple Arcade adds Block Blast!+ and Art of Fauna: Cozy Puzzles+ on September 3, bringing new puzzle games and updates for subscribers.",
+            "content": "Apple is growing the Apple Arcade gaming catalog with two more puzzle-centered titles, so subscribers get extra choices for quick little challenges and also the more relaxed kind of play\nBlock Blast!+ and Art of Fauna: Cozy Puzzles+ are set to land o... [4989 chars]",
+            "url": "https://techgenyz.com/apple-arcade-block-blast-art-of-fauna-puzzles/",
+            "image": "https://techgenyz.com/wp-content/uploads/2026/08/apple-arcade.webp",
+            "publishedAt": "2026-08-13T16:36:50Z",
+            "lang": "en",
+            "source": {
+                "id": "9710fd0a8060ce716a3567901da14e9a",
+                "name": "Techgenyz",
+                "url": "https://techgenyz.com"
+            }
+        }
+    ]
+}
