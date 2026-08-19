@@ -1,227 +1,160 @@
 {
-    "status": "ok",
-    "totalResults": 36,
+    "information": {
+        "realTimeArticles": {
+            "message": "Real-time news data is only available on paid plans. Free plan has a 12-hour delay. Upgrade your plan here to remove the delay: https://gnews.io/change-plan"
+        }
+    },
+    "totalArticles": 545032,
     "articles": [
         {
+            "id": "b32b4ac48dca575d74a706d3873b83c5",
+            "title": "IndiGo passenger climbs luggage belt, lashes out at staff after flight cancellation",
+            "description": "A woman passenger at Bhubaneswar Airport shouted at IndiGo ground staff after her flight was cancelled. The confrontation drew CISF intervention and online backlash, even as passengers alleged poor communication from the airline.",
+            "content": "A woman passenger was seen lashing out at IndiGo ground staff after her flight was cancelled, screaming at employees as they tried to manage the situation.\nA video of the incident has gone viral on social media, with several accounts claiming that th... [1774 chars]",
+            "url": "https://www.indiatoday.in/trending-news/story/indigo-passenger-angry-outburst-at-staff-after-flight-cancellation-sparks-backlash-2970912-2026-08-14",
+            "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/indigo-passengers-angry-outburst-at-staff-after-flight-cancellation-sparks-backlash-photos-crick-143714412-16x9_0.jpg?VersionId=c6YY1f11Of9Hm.5rT6kfdfVBLYwEMPSZ",
+            "publishedAt": "2026-08-14T03:41:48Z",
+            "lang": "en",
             "source": {
-                "id": "nbc-news",
-                "name": "NBC News"
-            },
-            "author": "Lawrence Hurley",
-            "title": "Supreme Court backs a marijuana user\u2019s challenge to a restriction on gun ownership - NBC News",
-            "description": "The Supreme Court endorsed a marijuana user's challenge to a law that bars people who consume illegal drugs from having firearms, the same law that Hunter Biden was convicted under.",
-            "url": "https://www.nbcnews.com/politics/supreme-court/supreme-court-backs-marijuana-users-challenge-restriction-gun-ownershi-rcna266931",
-            "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-02/260226-gun-vl-1219p-5b3a6c.jpg",
-            "publishedAt": "2026-06-18T14:32:58Z",
-            "content": "WASHINGTON The Supreme Court on Thursday barred the government from restricting the gun rights of casual drug users in a case involving a Texas man who occasionally consumed marijuana.\r\nSubscribe to \u2026 [+2956 chars]"
+                "id": "2c774512034015423758e249c44d2593",
+                "name": "India Today",
+                "url": "https://www.indiatoday.in"
+            }
         },
         {
+            "id": "d5cfa909bf6aa8c261a06e7f305b9b20",
+            "title": "VVS Laxman likely to become BCCI Director of Cricket",
+            "description": "VVS Laxman could be in line for a major new role within the BCCI. The former India batter is likely to take charge as Director of Cricket, expanding his influence beyond the Centre of Excellence.",
+            "content": "VVS Laxman, the former India batter and current head of the BCCI Centre of Excellence, is likely to take on a much bigger responsibility within Indian cricket. The development comes as the BCCI prepares for a possible reshuffle of key positions in Se... [2764 chars]",
+            "url": "https://www.indiatoday.in/sports/cricket/story/vvs-laxman-likely-to-become-bcci-director-of-cricket-2970909-2026-08-14",
+            "image": "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202608/vvs-laxman-143335810-16x9_0.jpg?VersionId=bEj.qZYvDUsYps0QdycGFdqK_StBtEKu",
+            "publishedAt": "2026-08-14T03:34:29Z",
+            "lang": "en",
             "source": {
-                "id": "the-washington-post",
-                "name": "The Washington Post"
-            },
-            "author": "Ariana Eunjung Cha",
-            "title": "7 unexpected takeaways from the newest research on cannabis and brain effects - The Washington Post",
-            "description": "Whether it\u2019s used in adolescence, midlife or older age may make a big difference.",
-            "url": "https://www.washingtonpost.com/health/2026/06/18/7-unexpected-takeaways-newest-research-cannabis-brain-effects/",
-            "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/3UQX5R4OR5GYZOD3DCJOMREA3Q.jpg&w=1440",
-            "publishedAt": "2026-06-18T13:32:15Z",
-            "content": "Stephen Lankenau has spent years studying how people use cannabis in everyday life. As director of Drexel Universitys Medical Cannabis Research Center, he has watched legalization spread, products gr\u2026 [+52 chars]"
+                "id": "2c774512034015423758e249c44d2593",
+                "name": "India Today",
+                "url": "https://www.indiatoday.in"
+            }
         },
         {
+            "id": "3f00950e496ddb0ef9947beb82a51294",
+            "title": "Trump announces tariffs of up to 100% on imported drones",
+            "description": "Trump imposes 100% tariffs on large imported drones, citing national security and aiming to boost U.S. production.",
+            "content": "President Donald Trump announced on Thursday (August 13, 2026) tariffs of up to 100% on imports of unmanned drones and their components to reduce U.S. reliance on imports in an industry dominated by China.\nThe U.S. president justified the decision on... [3001 chars]",
+            "url": "https://www.thehindu.com/news/international/trump-announces-tariffs-of-up-to-100-on-imported-drones/article71343943.ece",
+            "image": "https://th-i.thgim.com/public/incoming/hsp7yd/article71343951.ece/alternates/LANDSCAPE_1200/Trump_Dodging_Responsibility__6321.jpg",
+            "publishedAt": "2026-08-14T03:00:09Z",
+            "lang": "en",
             "source": {
-                "id": "associated-press",
-                "name": "Associated Press"
-            },
-            "author": "Barry Hatton",
-            "title": "Ukrainian drones set a Moscow refinery ablaze in a major attack on the Russian capital - AP News",
-            "description": "Ukraine has hit a major Moscow oil refinery for the second time in a week, disrupting hundreds of flights at the capital's airports. Russian officials said Thursday that this is one of Ukraine's biggest drone attacks since Russia\u2019s invasion over four years ag\u2026",
-            "url": "https://apnews.com/article/russia-ukraine-war-moscow-refinery-attack-oil-0ee97c720e770c392067418f9cabcbba",
-            "urlToImage": "https://dims.apnews.com/dims4/default/47f1966/2147483647/strip/true/crop/5500x3665+0+230/resize/980x653!/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2F21%2Fad%2Fe1101e12a54cd352495243700d02%2F4709039ad2894801b67de07c80bd2b17",
-            "publishedAt": "2026-06-18T13:24:00Z",
-            "content": "Ukraine struck a major Moscow oil refinery Thursday for a second time in a week, sending huge plumes of black smoke over the capital and disrupting hundreds of flights at its airports in one of its b\u2026 [+6218 chars]"
+                "id": "b186b851cfda2f4463224771573fadf2",
+                "name": "The Hindu",
+                "url": "https://www.thehindu.com"
+            }
         },
         {
+            "id": "d7f0e2efa387eb28bed0e63bd7120294",
+            "title": "'A moment that tore apart several lives': PM Modi on Partition Horrors Remembrance Day",
+            "description": "India News: NEW DELHI: A day ahead of Independence Day, Prime Minister Narendra Modi on Friday paid tribute to those affected by the Partition of India, rememberi.",
+            "content": "Partition triggered one of the largest mass migrations in history, affecting an estimated 20 million people.\nNEW DELHI: A day ahead of Independence Day, Prime Minister Narendra Modi on Friday paid tribute to those affected by the Partition of India, ... [1810 chars]",
+            "url": "https://timesofindia.indiatimes.com/india/a-moment-that-tore-apart-several-lives-pm-modi-on-partition-horrors-remembrance-day/articleshow/133227567.cms",
+            "image": "https://static.toiimg.com/thumb/msid-133227695,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "publishedAt": "2026-08-14T02:49:00Z",
+            "lang": "en",
             "source": {
-                "id": "espn",
-                "name": "ESPN"
-            },
-            "author": "ESPN staff",
-            "title": "Best moments from New York Knicks 2026 NBA championship parade - ESPN",
-            "description": "All of the sights and sounds as the New York Knicks celebrate their NBA championship in Manhattan.",
-            "url": "https://www.espn.com/nba/story/_/id/49100686/new-york-knicks-nba-championship-parade-sights-sounds-moments",
-            "urlToImage": "https://a1.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fespn_logos%2Fespn_red.png",
-            "publishedAt": "2026-06-18T13:24:00Z",
-            "content": "It's time for a trip through the Canyon of Heroes.Thursday's New York Knicks championship parade will celebrate New York's first NBA title since 1973. Jalen Brunson &amp; Co. -- who defeated the San \u2026 [+2675 chars]"
+                "id": "9c931d3332c3a87c89b804230892aa64",
+                "name": "The Times of India",
+                "url": "https://timesofindia.indiatimes.com"
+            }
         },
         {
+            "id": "69e128f0f0ff3bd60897f0f3048df66f",
+            "title": "US names India a part of ‘shadow transhipment network’ helping China evade Trump tariffs",
+            "description": "The White House report calls for firm action against countries that enable the rerouting of tariffed goods to evade US law. | India News",
+            "content": "A White House report has described India as a major part of a “shadow transhipment network” that allowed Chinese goods facing high US tariffs to enter the American market by re-routing them through third countries facing lower tariffs.\nIn the report ... [3373 chars]",
+            "url": "https://www.hindustantimes.com/india-news/us-names-india-a-part-of-shadow-transhipment-network-helping-china-evade-trump-tariffs-101786675027024.html",
+            "image": "https://www.hindustantimes.com/ht-img/img/2026/08/14/1600x900/logo/modi_trump_1754493678973_1754493679110_1786675272482_da33979c-3cb7-4ae4-bbff-aa5344278303.jpg",
+            "publishedAt": "2026-08-14T02:45:24Z",
+            "lang": "en",
             "source": {
-                "id": "nbc-news",
-                "name": "NBC News"
-            },
-            "author": "Matt Lavietes, Austin Mullen",
-            "title": "Daveigh Chase, star of \u2018The Ring\u2019 and the voice of Lilo in Disney\u2019s \u2018Lilo & Stitch,\u2019 dies at 35 - NBC News",
-            "description": "Former child actor Daveigh Chase, best known for her roles in \u201cLilo & Stitch\u201d and \u201cThe Ring,\u201d has died.",
-            "url": "https://www.nbcnews.com/news/us-news/daveigh-chase-star-ring-voice-lilo-disneys-lilo-stitch-dies-35-rcna350570",
-            "urlToImage": "https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1200-630,f_auto,q_auto:best/rockcms/2026-06/260617-Daveigh-Chase-ch-1329-f22d89.jpg",
-            "publishedAt": "2026-06-18T13:14:57Z",
-            "content": "Former child actor Daveigh Chase, best known for her roles in Lilo &amp; Stitch and The Ring, has died. \r\nSubscribe to read this story ad-free \r\nGet unlimited access to ad-free articles and exclusive\u2026 [+1886 chars]"
+                "id": "d32e3679b6a53eca83b3406e364c0d26",
+                "name": "Hindustan Times",
+                "url": "https://www.hindustantimes.com"
+            }
         },
         {
+            "id": "2e086c1fd6672ac8dc4ec741ecf2755b",
+            "title": "4 dead as ‘unprecedented’ rain floods Eastern Japan, strands thousands at Narita Airport",
+            "description": "Rest of World News: At least four people have died in eastern Japan after what authorities described as “unprecedented” heavy rain triggered widespread disruption, leavin.",
+            "content": "‘Unprecedented’ downpour kills 4 in Japan (AP image)\nAt least four people have died in eastern Japan after what authorities described as “unprecedented” heavy rain triggered widespread disruption, leaving thousands stranded overnight at Narita airpor... [1948 chars]",
+            "url": "https://timesofindia.indiatimes.com/world/rest-of-world/4-dead-as-unprecedented-rain-floods-eastern-japan-strands-thousands-at-narita-airport/articleshow/133227253.cms",
+            "image": "https://static.toiimg.com/thumb/msid-133227289,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "publishedAt": "2026-08-14T02:21:00Z",
+            "lang": "en",
             "source": {
-                "id": null,
-                "name": "NPR"
-            },
-            "author": "Geoff Brumfiel",
-            "title": "Report: Russia's nuclear-powered 'Skyfall' missile is dirty and dangerous - NPR",
-            "description": "MIT researchers think they've worked out exactly how Russia's Burevestnik nuclear-powered missile flies. \"It's almost certainly a terrible idea,\" one analyst said. \"But it's not an impossible idea.\"",
-            "url": "https://www.npr.org/2026/06/18/nx-s1-5843252/russia-nuclear-powered-missile-burevestnik",
-            "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1552x872+0+208/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F31%2Fcf%2Fac309870435fb6d6d7ae5f193328%2Frussian-missile-thumbnail.jpg",
-            "publishedAt": "2026-06-18T13:00:00Z",
-            "content": "Loading... \r\nSometime on Oct. 21 of last year, high above the Arctic Circle, a lone missile shot skyward from a Russian island.\r\nThe missile flew northeast and then banked and began flying in loops f\u2026 [+8495 chars]"
+                "id": "9c931d3332c3a87c89b804230892aa64",
+                "name": "The Times of India",
+                "url": "https://timesofindia.indiatimes.com"
+            }
         },
         {
+            "id": "2f6011a9e1ed18001a758162a6caf365",
+            "title": "‘Gambhir a fantastic coach’: Gary Kirsten backs under-fire India coach to deliver",
+            "description": "Cricket News: MUMBAI: India may be staring at the possibility of another setback in their World Test Championship campaign and that has increased the antagonism tha.",
+            "content": "File Pic: Gary Kirsten and Gautam Gambhir (PTI Photo)\nMUMBAI: India may be staring at the possibility of another setback in their World Test Championship campaign and that has increased the antagonism that cricket fans in India have towards head coac... [3898 chars]",
+            "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-sri-lanka/gambhir-a-fantastic-coach-gary-kirsten-backs-under-fire-india-coach-to-deliver/articleshow/133227236.cms",
+            "image": "https://static.toiimg.com/thumb/msid-133227263,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "publishedAt": "2026-08-14T02:15:00Z",
+            "lang": "en",
             "source": {
-                "id": null,
-                "name": "CBS Sports"
-            },
-            "author": "",
-            "title": "2026 U.S. Open leaderboard: Live updates, coverage, scores and standings for Round 1 at Shinnecock Hills - CBS Sports",
-            "description": "Live scores, updates and highlights from the first round of the 126th U.S. Open",
-            "url": "https://www.cbssports.com/golf/news/us-open-2026-leaderboard-live-updates-round-1-scores-results/live/",
-            "urlToImage": "https://sportshub.cbsistatic.com/i/r/2026/06/18/9913a0d9-2ec1-47ef-accc-fcf65b21e832/thumbnail/1200x675/7447362abacd8507d1d42f349c347c55/us-open-sign-trophy-g.jpg",
-            "publishedAt": "2026-06-18T12:50:16Z",
-            "content": "SOUTHAMPTON, N.Y. -- One of the most difficult courses on the USGA's rotation of venues hosts the U.S. Open for the first time in eight years as Shinnecock Hills welcomes a loaded 156-man field featu\u2026 [+949 chars]"
+                "id": "9c931d3332c3a87c89b804230892aa64",
+                "name": "The Times of India",
+                "url": "https://timesofindia.indiatimes.com"
+            }
         },
         {
+            "id": "44940762290a827356f90deec9f3ad0a",
+            "title": "Intrigue around the Galle pitch but India likely to opt for the safe route",
+            "description": "Cricket News: TimesofIndia.com in Galle: Two days before the Test, there has been an unusual intrigue around the playing surface. Word from both camps is that it is.",
+            "content": "Indian players warm up during a training session ahead of the first Test cricket match against Sri Lanka at Galle International Stadium in Galle, Sri Lanka, on Thursday. (ANI Photo)\nTimesofIndia.com in Galle: Two days before the Test, there has been ... [5385 chars]",
+            "url": "https://timesofindia.indiatimes.com/sports/cricket/india-vs-sri-lanka/india-vs-sri-lanka-galle-test-pitch-report-playing-xi-weather-update-fast-bowlers-spinners/articleshow/133227192.cms",
+            "image": "https://static.toiimg.com/thumb/msid-133227232,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "publishedAt": "2026-08-14T02:14:00Z",
+            "lang": "en",
             "source": {
-                "id": "the-wall-street-journal",
-                "name": "The Wall Street Journal"
-            },
-            "author": "WSJ",
-            "title": "Stock Market Today: Nasdaq Set to Rebound, Gasoline Prices Fall Below $4 \u2014 Live Updates - WSJ",
-            "description": null,
-            "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-18-2026",
-            "urlToImage": null,
-            "publishedAt": "2026-06-18T11:45:00Z",
-            "content": null
+                "id": "9c931d3332c3a87c89b804230892aa64",
+                "name": "The Times of India",
+                "url": "https://timesofindia.indiatimes.com"
+            }
         },
         {
+            "id": "17f35133e4d76171e44e6c5abebac35e",
+            "title": "Indian-origin man pleads guilty to accessing CSAM, jailed in US",
+            "description": "Indian-origin man pleaded guilty in court in New Jersey to accessing child sexual exploitation material involving a prepubescent minor.",
+            "content": "Washington: An Indian-origin man has pleaded guilty in a federal court in New Jersey to accessing child sexual abuse material (CSAM) involving a prepubescent minor, the Department of Justice said in a statement.\nAbhishek Vijaykumar, a resident of Has... [1212 chars]",
+            "url": "https://www.siasat.com/indian-origin-man-pleads-guilty-to-accessing-csam-jailed-in-us-3524357/",
+            "image": "https://cdn.siasat.com/wp-content/uploads/2026/08/Instagram-photo.jpg",
+            "publishedAt": "2026-08-14T02:11:17Z",
+            "lang": "en",
             "source": {
-                "id": null,
-                "name": "BBC News"
-            },
-            "author": "BBC Sport",
-            "title": "World Cup 2026: Ivory Coast's Elye Wahi denied entry to Canada - BBC",
-            "description": "The Ivory Coast football federation have announced their forward Elye Wahi has been denied entry to Canada for their next World Cup game.",
-            "url": "https://www.bbc.com/sport/football/articles/cvg7n7xdnd0o",
-            "urlToImage": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/3ba2/live/94400940-6b01-11f1-8317-e1f912f75a64.jpg",
-            "publishedAt": "2026-06-18T11:39:28Z",
-            "content": "Ivory Coast international Elye Wahi has been denied entry to Canada for his country's World Cup group game against Germany on Saturday.\r\nThe Nice forward was reportedly, external arrested last month \u2026 [+3855 chars]"
+                "id": "221d329577776b3b9c2f2b9b9688e586",
+                "name": "The Siasat Daily",
+                "url": "https://www.siasat.com"
+            }
         },
         {
+            "id": "dac84818ff2990e29da1f7e5f14f61bf",
+            "title": "Tata Trusts weighs legal moves to get SRTT back into decision-making fray",
+            "description": "Tata Trusts is considering urgent legal action to lift restrictions on Sir Ratan Tata Trust (SRTT), which could otherwise disrupt Tata Sons chairman succession process. SRTT and Sir Dorabji Tata Trust must jointly nominate an AGM representative and three members to the search committee for N Chandrasekarans successor.",
+            "content": "Synopsis\nTata Trusts is considering urgent legal action to lift restrictions on Sir Ratan Tata Trust (SRTT), which could otherwise disrupt Tata Sons’ chairman succession process. SRTT and Sir Dorabji Tata Trust must jointly nominate an AGM representa... [4169 chars]",
+            "url": "https://economictimes.indiatimes.com/news/company/corporate-trends/tata-trusts-weighs-legal-moves-to-get-srtt-back-into-decision-making-fray/articleshow/133226800.cms?from=mdr",
+            "image": "https://img.etimg.com/thumb/msid-133226810,width-1200,height-630,imgsize-289246,overlay-economictimes/articleshow.jpg",
+            "publishedAt": "2026-08-14T00:55:21Z",
+            "lang": "en",
             "source": {
-                "id": null,
-                "name": "Fox Business"
-            },
-            "author": "Bradford Betz",
-            "title": "Qantas to launch world's longest nonstop commercial flight between Sydney and London - Fox Business",
-            "description": "Qantas says its new Sydney-London route will become the world's longest nonstop commercial flight, cutting travel time and expanding Project Sunrise.",
-            "url": "https://www.foxbusiness.com/lifestyle/qantas-sydney-london-worlds-longest-nonstop-flight",
-            "urlToImage": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2026/06/0/0/australia-qantas.jpg?ve=1&tl=1",
-            "publishedAt": "2026-06-18T11:34:00Z",
-            "content": "Qantas plans to launch what it says will be the world's longest nonstop commercial flight in October 2027, connecting Sydney and London with a journey expected to last up to 22 hours.\r\nThe Australian\u2026 [+3179 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "Financial Times"
-            },
-            "author": "Amy Mackinnon",
-            "title": "Pete Hegseth unveils six-month review of US military presence in Europe - Financial Times",
-            "description": "Defence secretary announced decision as he scolded Nato allies for failing to support Washington in Iran war",
-            "url": "https://www.ft.com/content/41c23df5-91d1-4e6b-9ff1-bdb0ca221978?syn-25a6b1a6\\\\u003d1",
-            "urlToImage": "https://images.ft.com/v3/image/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F7062c18d-924a-4023-a187-b9e3e28220e8.jpg?source=next-barrier-page",
-            "publishedAt": "2026-06-18T11:17:55Z",
-            "content": "Then $75 per month. Complete digital access to quality FT journalism on any device. Cancel anytime during your trial."
-        },
-        {
-            "source": {
-                "id": "al-jazeera-english",
-                "name": "Al Jazeera English"
-            },
-            "author": "Al Jazeera Staff",
-            "title": "World reacts to US-Iran deal to extend ceasefire, reopen Strait of Hormuz - Al Jazeera",
-            "description": "Several countries welcome deal, as IAEA chief says \u2018now the technical work starts\u2019 on Iran\u2019s nuclear programme.",
-            "url": "https://www.aljazeera.com/news/2026/6/18/world-reacts-to-us-iran-deal-to-extend-ceasefire-begin-negotations",
-            "urlToImage": "https://www.aljazeera.com/wp-content/uploads/2026/06/afp_6a33bb2fe890-1781775151.jpg?resize=1920%2C1440",
-            "publishedAt": "2026-06-18T11:14:29Z",
-            "content": "US President Donald Trump and Irans President Masoud Pezeshkian have electronically signed a memorandum of understanding to extend a ceasefire in the US-Iran war.\r\nPakistan, which has been mediating \u2026 [+5111 chars]"
-        },
-        {
-            "source": {
-                "id": "bloomberg",
-                "name": "Bloomberg"
-            },
-            "author": "Georgia Hall",
-            "title": "US Treasuries Rebound After Warsh\u2019s Debut at Fed Stoked Selloff - Bloomberg.com",
-            "description": "US Treasuries recovered from a selloff after the new Federal Reserve Chairman Kevin Warsh positioned himself as a credible figure to fight inflation.",
-            "url": "https://www.bloomberg.com/news/articles/2026-06-18/us-treasuries-rebound-after-warsh-s-debut-at-fed-stoked-selloff",
-            "urlToImage": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iXkHXHXOQG8E/v1/1200x800.jpg",
-            "publishedAt": "2026-06-18T10:49:29Z",
-            "content": "US Treasuries recovered from a selloff after the new Federal Reserve Chairman Kevin Warsh positioned himself as a credible figure to fight inflation.\r\nTwo-year Treasury yields steadied at around 4.19\u2026 [+277 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "inTouch Weekly"
-            },
-            "author": "Melody Rivera",
-            "title": "Jelly Roll Shares Who \u2018Got Me On My Feet\u2019 Amid Bunny Xo Divorce - Yahoo",
-            "description": "Save Me singer Jelly Roll missed part of his concert with Post Malone days before his divorce from Bunnie Xo was revealed after 10 years of marriage.",
-            "url": "https://intouchweekly.com/jelly-roll-shares-who-got-me-on-my-feet-amid-bunny-xo-divorce/",
-            "urlToImage": "https://intouchweekly.com/wp-content/uploads/2026/02/Featured-1-Jelly-Roll-3-1000x600.jpeg",
-            "publishedAt": "2026-06-18T10:43:53Z",
-            "content": "ZUMAPRESS.com / MEGA\r\nJelly Roll was missing on stage at Post Malone\u2018s concert days before his divorce news broke.\r\nA week before it was revealed the \u201cSave Me\u201d singer, 41, filed for divorce from Bunn\u2026 [+1808 chars]"
-        },
-        {
-            "source": {
-                "id": "the-hill",
-                "name": "The Hill"
-            },
-            "author": "Helen Huiskes",
-            "title": "Senate GOP frustrations grow as Trump blocks Republican victories - The Hill",
-            "description": "Republican senators are growing tired of the White House throwing curveballs into things they want to get done.\u00a0 For example, many Republican senators want a now-lapsed surveillance law that allows intelligence agencies to spy on foreign threats to be reautho\u2026",
-            "url": "https://thehill.com/homenews/senate/5929341-republican-senators-frustrated-trump-moves/",
-            "urlToImage": "https://thehill.com/wp-content/uploads/sites/2/2026/06/FISA_Huiskes_AP_JuliaDemareeNikhinson.jpg?w=1280",
-            "publishedAt": "2026-06-18T10:00:00Z",
-            "content": "Skip to content\r\nRepublican senators are growing tired of the White House throwing curveballs into things they want to get done.\u00a0\r\nFor example, many Republican senators want a now-lapsed surveillance\u2026 [+5741 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "MacRumors"
-            },
-            "author": "Tim Hardwick",
-            "title": "12 Reasons to Wait for the iPhone 18 Pro - MacRumors",
-            "description": "We're only three months out from the launch of Apple's premium next-generation smartphone lineup, and while we're not expecting a sea...",
-            "url": "https://www.macrumors.com/2026/06/18/12-reasons-wait-iphone-18-pro/",
-            "urlToImage": "https://images.macrumors.com/t/GEiBu2iaA9GrrmRRMXVC3ULLfZo=/2500x/article-new/2026/01/Dynamic-Island-iPhone-18-Pro-Feature.jpg",
-            "publishedAt": "2026-06-18T09:17:44Z",
-            "content": "We're only three months out from the launch of Apple's premium next-generation smartphone lineup, and while we're not expecting a sea change in terms of functionality, there are still several enhance\u2026 [+11617 chars]"
-        },
-        {
-            "source": {
-                "id": null,
-                "name": "NPR"
-            },
-            "author": "Maham Javaid",
-            "title": "The Obama Presidential Center will be dedicated Thursday. Here's what to expect - NPR",
-            "description": "The Obama Presidential Center's grand opening ceremony will be a star-studded event. The center's museum highlights the legacy of the former president, but it is not a traditional presidential library.",
-            "url": "https://www.npr.org/2026/06/18/nx-s1-5861803/obama-presidential-center-dedication-chicago",
-            "urlToImage": "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4896x2754+0+0/resize/1400/quality/85/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc9%2F4b%2F638016954a57823f7ad6f63e327f%2Fgettyimages-2281350982.jpg",
-            "publishedAt": "2026-06-18T09:00:00Z",
-            "content": "Nearly a decade in the making, the Obama Presidential Center will have a star-studded dedication ceremony Thursday. \r\nThe grand opening, which will host \"global leaders, artists, changemakers, and ci\u2026 [+1812 chars]"
+                "id": "1ca60cee1253d8e8a92dd12679635599",
+                "name": "The Economic Times",
+                "url": "https://m.economictimes.com"
+            }
         }
     ]
 }
