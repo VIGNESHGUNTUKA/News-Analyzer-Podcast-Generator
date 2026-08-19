@@ -1,12 +1,12 @@
 # Use official Python runtime as a parent image
-FROM python:3.9-slim
+FROM python:3.11-slim
 
 # Set working directory
 WORKDIR /app
 
 # Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
 # Install dependencies
 COPY requirements.txt .
