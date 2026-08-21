@@ -1,4 +1,4 @@
-# 🎙️ NewsPod – AI-Powered News Podcast Generator
+# 🎙️ NewsPod – Powered News Podcast Generator
 
 **NewsPod** is a multilingual news analysis and podcast generation application that collects news, analyzes and summarizes articles, translates the generated summary into the user's selected language, and converts the final content into an audio podcast using AI voices.
 
