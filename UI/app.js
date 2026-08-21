@@ -1,7 +1,9 @@
 // UI State & Elements
 let currentMode = 'manual';
 let generatedPodcasts = [];
+let bookmarkedPodcasts = JSON.parse(localStorage.getItem('newsPodBookmarks')) || [];
 let currentPlayingFile = null;
+let currentPlayingIndex = -1;
 
 // Voice map matching config.py
 const VOICES_MAP = {
@@ -34,13 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const automaticWorkspace = document.getElementById('automatic-workspace');
     const prefLanguage = document.getElementById('pref-language');
     const prefVoice = document.getElementById('pref-voice');
-    const prefCategory = document.getElementById('pref-category');
     const btnGenerate = document.getElementById('btn-generate');
     const newsTextarea = document.getElementById('news-textarea');
     const loadingOverlay = document.getElementById('loading-overlay');
     const loadingText = loadingOverlay.querySelector('h4');
     const loadingDesc = loadingOverlay.querySelector('p');
-    
+
     // Audio Player Elements
     const audioEl = document.getElementById('html5-audio');
     const btnPlayPause = document.getElementById('player-play-pause');
@@ -56,8 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const volumeFill = document.getElementById('volume-fill');
     const btnMute = document.getElementById('player-mute-btn');
     const favoriteBtn = document.querySelector('.favorite-btn');
-    const shuffleBtn = document.getElementById('player-shuffle');
-    const repeatBtn = document.getElementById('player-repeat');
 
     // 1. Navigation Tab Switching
     navItems.forEach(item => {
@@ -65,17 +64,37 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             navItems.forEach(n => n.classList.remove('active'));
             item.classList.add('active');
-            
+
             const tab = item.getAttribute('data-tab');
+            
+            // Clear active green border highlights from all sections and mode cards
+            const welcomeBanner = document.querySelector('.welcome-banner');
+            const bookEl = document.getElementById('bookmarks-section');
+            const aboutEl = document.getElementById('about-us-section');
+            if (welcomeBanner) welcomeBanner.classList.remove('active');
+            if (bookEl) bookEl.classList.remove('active');
+            if (aboutEl) aboutEl.classList.remove('active');
+
             if (tab === 'home') {
                 document.querySelector('.page-container').classList.remove('hidden');
                 document.querySelector('.page-container').scrollTo({ top: 0, behavior: 'smooth' });
+                if (welcomeBanner) welcomeBanner.classList.add('active');
             } else if (tab === 'manual') {
                 switchMode('manual');
             } else if (tab === 'automatic') {
                 switchMode('automatic');
             } else if (tab === 'categories') {
                 document.querySelector('.page-container').scrollTo({ top: 0, behavior: 'smooth' });
+            } else if (tab === 'bookmarks') {
+                if (bookEl) {
+                    bookEl.classList.add('active');
+                    bookEl.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else if (tab === 'about') {
+                if (aboutEl) {
+                    aboutEl.classList.add('active');
+                    aboutEl.scrollIntoView({ behavior: 'smooth' });
+                }
             }
         });
     });
@@ -85,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => {
             modeCards.forEach(c => c.classList.remove('active'));
             card.classList.add('active');
-            
+
             const mode = card.getAttribute('data-mode');
             switchMode(mode);
         });
@@ -93,25 +112,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function switchMode(mode) {
         currentMode = mode;
-        const categoryPref = document.getElementById('category-preference-item');
+        const welcomeBanner = document.querySelector('.welcome-banner');
+        if (welcomeBanner) welcomeBanner.classList.remove('active');
         if (mode === 'manual') {
             manualWorkspace.classList.remove('hidden');
             automaticWorkspace.classList.add('hidden');
-            // Sync with mode cards
             document.querySelector('[data-mode="manual"]').classList.add('active');
             document.querySelector('[data-mode="automatic"]').classList.remove('active');
-            // Hide category selection for manual mode
-            if (categoryPref) categoryPref.style.display = 'none';
         } else {
             manualWorkspace.classList.add('hidden');
             automaticWorkspace.classList.remove('hidden');
-            // Sync with mode cards
             document.querySelector('[data-mode="manual"]').classList.remove('active');
             document.querySelector('[data-mode="automatic"]').classList.add('active');
-            // Show category selection for automatic mode
-            if (categoryPref) categoryPref.style.display = 'flex';
         }
-        // Scroll to the top of the main content area smoothly
         document.querySelector('.page-container').scrollTo({ top: 0, behavior: 'smooth' });
     }
 
@@ -138,14 +151,15 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const res = await fetch('/api/headlines');
             const headlines = await res.json();
-            
+
             if (headlines.length === 0) {
                 container.innerHTML = '<div class="headline-skeleton">No headlines collected yet.</div>';
                 return;
             }
-            
+
             container.innerHTML = '';
-            headlines.forEach((art, index) => {
+            const top10Headlines = headlines.slice(0, 5);
+            top10Headlines.forEach((art, index) => {
                 const card = document.createElement('div');
                 card.className = 'headline-card';
                 card.innerHTML = `
@@ -182,15 +196,16 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const res = await fetch('/api/podcasts');
             generatedPodcasts = await res.json();
-            
+
             if (generatedPodcasts.length === 0) {
                 container.innerHTML = '<div class="podcast-skeleton">No podcasts generated yet. Set preferences and click Generate!</div>';
                 return;
             }
-            
+
             container.innerHTML = '';
             generatedPodcasts.forEach((pod) => {
                 const isPlaying = currentPlayingFile === pod.filename;
+                const isBookmarked = bookmarkedPodcasts.some(b => b.filename === pod.filename);
                 const card = document.createElement('div');
                 card.className = `podcast-card ${isPlaying ? 'playing' : ''}`;
                 card.innerHTML = `
@@ -207,26 +222,99 @@ document.addEventListener('DOMContentLoaded', () => {
                         <a href="${pod.url}" download="${pod.filename}" class="podcast-action-btn" title="Download Audio">
                             <i data-lucide="download"></i>
                         </a>
-                        <button class="podcast-action-btn favorite-podcast-btn" title="Bookmark">
+                        <button class="podcast-action-btn favorite-podcast-btn ${isBookmarked ? 'active' : ''}" title="Bookmark">
                             <i data-lucide="bookmark"></i>
                         </button>
                     </div>
                 `;
-                
+
                 // Click card play button
                 const playBtn = card.querySelector('.podcast-play-btn');
                 playBtn.addEventListener('click', (e) => {
                     e.stopPropagation();
                     playPodcast(pod);
                 });
-                
+
+                // Bookmark toggle handler
+                const bookmarkBtn = card.querySelector('.favorite-podcast-btn');
+                bookmarkBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    toggleBookmark(pod);
+                });
+
                 container.appendChild(card);
             });
             lucide.createIcons();
+            renderBookmarks();
         } catch (e) {
             console.error(e);
             container.innerHTML = '<div class="podcast-skeleton">Failed to load podcast library.</div>';
         }
+    }
+
+    // Toggle Bookmark Function
+    function toggleBookmark(pod) {
+        const index = bookmarkedPodcasts.findIndex(b => b.filename === pod.filename);
+        if (index > -1) {
+            bookmarkedPodcasts.splice(index, 1);
+        } else {
+            bookmarkedPodcasts.push(pod);
+        }
+        localStorage.setItem('newsPodBookmarks', JSON.stringify(bookmarkedPodcasts));
+        loadPodcasts();
+        renderBookmarks();
+    }
+
+    // Render Bookmarks Section Function
+    function renderBookmarks() {
+        const bContainer = document.getElementById('bookmarks-container');
+        if (!bContainer) return;
+
+        if (bookmarkedPodcasts.length === 0) {
+            bContainer.innerHTML = '<div class="podcast-skeleton">No bookmarked podcasts yet. Click the bookmark icon on any podcast to save it!</div>';
+            return;
+        }
+
+        bContainer.innerHTML = '';
+        bookmarkedPodcasts.forEach((pod) => {
+            const isPlaying = currentPlayingFile === pod.filename;
+            const card = document.createElement('div');
+            card.className = `podcast-card ${isPlaying ? 'playing' : ''}`;
+            card.innerHTML = `
+                <div class="podcast-left">
+                    <div class="podcast-play-btn" data-url="${pod.url}" data-filename="${pod.filename}">
+                        <i data-lucide="${isPlaying && !audioEl.paused ? 'pause' : 'play'}"></i>
+                    </div>
+                    <div class="podcast-info">
+                        <h4 class="podcast-title">${pod.category} News Podcast - ${pod.language}</h4>
+                        <p class="podcast-meta">${pod.date}</p>
+                    </div>
+                </div>
+                <div class="podcast-actions">
+                    <a href="${pod.url}" download="${pod.filename}" class="podcast-action-btn" title="Download Audio">
+                        <i data-lucide="download"></i>
+                    </a>
+                    <button class="podcast-action-btn favorite-podcast-btn active" title="Remove Bookmark">
+                        <i data-lucide="bookmark"></i>
+                    </button>
+                </div>
+            `;
+
+            const playBtn = card.querySelector('.podcast-play-btn');
+            playBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                playPodcast(pod);
+            });
+
+            const bookmarkBtn = card.querySelector('.favorite-podcast-btn');
+            bookmarkBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                toggleBookmark(pod);
+            });
+
+            bContainer.appendChild(card);
+        });
+        lucide.createIcons();
     }
 
     // Play Podcast Function
@@ -240,15 +328,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             return;
         }
-        
+
         currentPlayingFile = pod.filename;
+        currentPlayingIndex = generatedPodcasts.findIndex(p => p.filename === pod.filename);
         audioEl.src = pod.url;
         audioEl.load();
         audioEl.play();
-        
+
         playerTitle.textContent = `${pod.category} News Podcast`;
         playerStatus.textContent = `${pod.language} Voice | Playing`;
-        
+
         // Save state UI updates
         updatePodcastListUI();
     }
@@ -258,7 +347,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const playBtn = card.querySelector('.podcast-play-btn');
             const file = playBtn.getAttribute('data-filename');
             const icon = playBtn.querySelector('i');
-            
+
             if (file === currentPlayingFile) {
                 card.classList.add('playing');
                 if (audioEl.paused) {
@@ -272,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         lucide.createIcons();
-        
+
         // Update Bottom Player Play Pause button
         if (audioEl.paused) {
             btnPlayPause.innerHTML = '<i data-lucide="play"></i>';
@@ -289,12 +378,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const language = prefLanguage.value;
         const selectedOpt = prefLanguage.options[prefLanguage.selectedIndex];
         const lang_code = selectedOpt.getAttribute('data-code');
-        const category = prefCategory.value;
+        const category = 'General';
         const voice = prefVoice.value;
-        
+
         let bodyData = { language, lang_code, category, voice };
         let url = '';
-        
+
         if (currentMode === 'manual') {
             const text = newsTextarea.value.trim();
             if (!text) {
@@ -310,10 +399,10 @@ document.addEventListener('DOMContentLoaded', () => {
             loadingText.textContent = `Collecting ${category} News...`;
             loadingDesc.textContent = "Fetching news updates from global headlines database, summarizing content, and rendering audio...";
         }
-        
+
         // Show overlay
         loadingOverlay.classList.remove('hidden');
-        
+
         try {
             const res = await fetch(url, {
                 method: 'POST',
@@ -321,16 +410,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 body: JSON.stringify(bodyData)
             });
             const data = await res.json();
-            
+
             if (data.success) {
                 // Success! Reload Podcasts
                 await loadPodcasts();
-                
+
                 // Clear textarea if manual
                 if (currentMode === 'manual') {
                     newsTextarea.value = '';
                 }
-                
+
                 // Play the newly generated podcast (it should be the first one in the list)
                 if (generatedPodcasts.length > 0) {
                     playPodcast(generatedPodcasts[0]);
@@ -367,12 +456,12 @@ document.addEventListener('DOMContentLoaded', () => {
     audioEl.addEventListener('timeupdate', () => {
         const cur = audioEl.currentTime;
         const dur = audioEl.duration || 0;
-        
+
         // Calculate progress percentage
         const percent = dur > 0 ? (cur / dur) * 100 : 0;
         progressFill.style.width = `${percent}%`;
         progressThumb.style.left = `${percent}%`;
-        
+
         // Formatted times
         currentTimeEl.textContent = formatTime(cur);
         totalTimeEl.textContent = formatTime(dur);
@@ -403,10 +492,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let percentage = clickX / width;
         if (percentage < 0) percentage = 0;
         if (percentage > 1) percentage = 1;
-        
+
         audioEl.volume = percentage;
         volumeFill.style.width = `${percentage * 100}%`;
-        
+
         if (percentage === 0) {
             btnMute.innerHTML = '<i data-lucide="volume-x"></i>';
         } else if (percentage < 0.5) {
@@ -429,38 +518,89 @@ document.addEventListener('DOMContentLoaded', () => {
         lucide.createIcons();
     });
 
-    // Dummy bottom action clicks for aesthetic interactivity
-    favoriteBtn.addEventListener('click', () => favoriteBtn.classList.toggle('active'));
-    shuffleBtn.addEventListener('click', () => shuffleBtn.classList.toggle('active'));
-    repeatBtn.addEventListener('click', () => repeatBtn.classList.toggle('active'));
+    // Previous & Next podcast navigation
+    const btnPrev = document.getElementById('player-prev');
+    const btnNext = document.getElementById('player-next');
 
-    // Enable Daily Update action
-    const btnDaily = document.getElementById('btn-enable-daily');
-    btnDaily.addEventListener('click', () => {
-        alert("Daily newsletter podcasts enabled! You will now receive podcast briefs in your inbox.");
+    btnPrev.addEventListener('click', () => {
+        if (generatedPodcasts.length === 0) return;
+        let prevIndex = currentPlayingIndex - 1;
+        if (prevIndex < 0) prevIndex = generatedPodcasts.length - 1;
+        playPodcast(generatedPodcasts[prevIndex]);
     });
+
+    btnNext.addEventListener('click', () => {
+        if (generatedPodcasts.length === 0) return;
+        let nextIndex = currentPlayingIndex + 1;
+        if (nextIndex >= generatedPodcasts.length) nextIndex = 0;
+        playPodcast(generatedPodcasts[nextIndex]);
+    });
+
+    // Auto-advance to next podcast when current one ends
+    audioEl.addEventListener('ended', () => {
+        if (generatedPodcasts.length === 0) return;
+        let nextIndex = currentPlayingIndex + 1;
+        if (nextIndex < generatedPodcasts.length) {
+            playPodcast(generatedPodcasts[nextIndex]);
+        } else {
+            // End of playlist
+            playerStatus.textContent = 'Playlist ended';
+            miniVisualizer.classList.add('paused');
+            btnPlayPause.innerHTML = '<i data-lucide="play"></i>';
+            lucide.createIcons();
+        }
+    });
+
+    // Bottom action clicks
+    favoriteBtn.addEventListener('click', () => favoriteBtn.classList.toggle('active'));
+
+
 
     // Global Search Functionality
     const searchInput = document.getElementById('main-search-input');
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
-            const term = e.target.value.toLowerCase();
-            
+            const term = e.target.value.trim().toLowerCase();
+
             // Filter Headlines
-            document.querySelectorAll('.headline-card').forEach(card => {
+            const headlineCards = document.querySelectorAll('.headline-card');
+            let headlineMatchCount = 0;
+            headlineCards.forEach(card => {
                 const text = card.textContent.toLowerCase();
-                card.style.display = text.includes(term) ? 'flex' : 'none';
+                if (term === '' || text.includes(term)) {
+                    card.style.display = 'flex';
+                    headlineMatchCount++;
+                } else {
+                    card.style.display = 'none';
+                }
             });
-            
-            // Filter Podcasts
-            document.querySelectorAll('.podcast-card').forEach(card => {
+
+            // Filter Podcasts (in recent podcasts and bookmarks)
+            const podcastCards = document.querySelectorAll('.podcast-card');
+            let podcastMatchCount = 0;
+            podcastCards.forEach(card => {
                 const text = card.textContent.toLowerCase();
-                card.style.display = text.includes(term) ? 'flex' : 'none';
+                if (term === '' || text.includes(term)) {
+                    card.style.display = 'flex';
+                    podcastMatchCount++;
+                } else {
+                    card.style.display = 'none';
+                }
             });
+
+            // If user typed something, smoothly scroll to feed grid so results are immediately visible
+            if (term.length === 1) {
+                const feedGrid = document.querySelector('.feed-grid');
+                if (feedGrid) {
+                    feedGrid.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
         });
     }
 
     // Startup Init
+    const welcomeBanner = document.querySelector('.welcome-banner');
+    if (welcomeBanner) welcomeBanner.classList.add('active');
     populateVoices("Telugu");
     switchMode('manual');
     loadHeadlines();

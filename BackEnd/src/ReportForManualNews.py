@@ -1,7 +1,9 @@
 from datetime import datetime
+import os
 def generate_report_for_manual(total, unique, top, category, freq, language,transulated_summary):
     timestamp=datetime.now().strftime("%d%m%Y_%H%M%S")
     
+    os.makedirs("output/Report", exist_ok=True)
     with open(f"output/Report/{category}NewsReport_{language}.txt", "w", encoding="utf-8") as file:
         file.write("NEWS ANALYSER REPORT\n")
         file.write("================================================\n\n")

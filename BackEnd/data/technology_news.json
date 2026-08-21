@@ -4,16 +4,61 @@
             "message": "Real-time news data is only available on paid plans. Free plan has a 12-hour delay. Upgrade your plan here to remove the delay: https://gnews.io/change-plan"
         }
     },
-    "totalArticles": 319506,
+    "totalArticles": 321780,
     "articles": [
         {
-            "id": "3d42fbeb517e0ded5152620ce5031499",
-            "title": "iPhone manufacturer says base iPhone 18 won't launch until 2027",
-            "description": "Apple's iPhone 18 launch could be split into two stages, with Pegatron saying the Pro models are still on track for September while the standard version may be delayed until early 2027. Memory and chip shortages are reportedly behind the unusual schedule.",
-            "content": "Rumors of a split iPhone 18 launch have been circulating for months, with the high-end Pro models expected to arrive in September and the standard version reportedly following in early 2027. Now, those reports have received what is essentially offici... [1902 chars]",
-            "url": "https://www.notebookcheck.net/iPhone-manufacturer-says-base-iPhone-18-won-t-launch-until-2027.1368078.0.html",
-            "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/Apple-iPhone-17-Pro_02.webp",
-            "publishedAt": "2026-08-13T20:58:00Z",
+            "id": "e3fd907f76522a720e9d320c2311b696",
+            "title": "Will Apple’s $2,199 iPhone Ultra fix the foldable market?",
+            "description": "Rothschild upgrades Apple stock with a $400 target, projecting 14M iPhone Ultra sales at $2,199. Here is why Wall Street is betting on a foldable iPhone.",
+            "content": "Most technology gets cheaper the longer it stays on sale. That is the bargain buyers have come to expect. Wait a generation or two, and the gadget that cost a fortune at launch turns up at half the price with twice the storage.\nFolding phones never h... [7390 chars]",
+            "url": "https://www.thestreet.com/technology/rothschild-bets-on-apple-iphone-ultra-foldable-phone",
+            "image": "https://www.thestreet.com/.image/NDA6MDAwMDAwMDAzMTUxNTE0/apple-iphones-for-sale.jpg?profile=share16-9",
+            "publishedAt": "2026-08-21T00:07:00Z",
+            "lang": "en",
+            "source": {
+                "id": "6194c08bbdf9b4ce58c3e3557fa2c159",
+                "name": "thestreet.com",
+                "url": "https://www.thestreet.com"
+            }
+        },
+        {
+            "id": "f1b767e4a9d6c480a2d9fbe8996e39c4",
+            "title": "A beloved Pixel gesture just stopped working for some users",
+            "description": "And there isn't a fix yet",
+            "content": "If you're a Pixel owner, you know Google is always working behind the scenes to bring more features and enhancements to its devices. We love that the Pixel gets rapid updates when compared to the competition.\nHowever, updates aren't always a good thi... [1971 chars]",
+            "url": "https://www.androidpolice.com/flip-to-shhh-not-working-on-some-pixel-phones/",
+            "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/08/the-art-of-being-content-0-2-screenshot.png?w=1600&h=900&fit=crop",
+            "publishedAt": "2026-08-21T00:06:00Z",
+            "lang": "en",
+            "source": {
+                "id": "22e6fb8c6790d769287f0f057fea36e9",
+                "name": "Android Police",
+                "url": "https://www.androidpolice.com"
+            }
+        },
+        {
+            "id": "14331e787cdc75b511abc2513a1def76",
+            "title": "Galaxy S26 FE Will Reveal Which Phones Get Samsung’s Free Upgrade",
+            "description": "Will Samsung's new Galaxy S26 FE get Gemini Intelligence? The answer will reveal exactly which Galaxy phones Google's transformative new AI actually supports.",
+            "content": "Google And Samsung Silent On Galaxy S26 FE AI tools\nFor the uninitiated, Gemini Intelligence is a big step beyond the AI features most people are used to. It’s not a chatbot you open in an app and type questions into. It’s an agentic AI, meaning it a... [3091 chars]",
+            "url": "https://www.forbes.com/sites/jaymcgregor/2026/08/20/galaxy-s26-fe-release-date-gemini-intelligence-free-upgrade/",
+            "image": "https://imageio.forbes.com/specials-images/imageserve/6a873bbbadf7b606c57fd6c7/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
+            "publishedAt": "2026-08-20T20:10:51Z",
+            "lang": "en",
+            "source": {
+                "id": "c4e32b557a3dd75225975f11fb68a3a9",
+                "name": "Forbes",
+                "url": "https://www.forbes.com"
+            }
+        },
+        {
+            "id": "defd5d043966e64370fca9bc02896e3d",
+            "title": "GTA 6 leak mess deepens as second group surfaces with alleged internal build",
+            "description": "The already murky GTA 6 leak saga appears to have escalated, with a second group claiming access to internal Rockstar material after allegedly phishing an employee in India. The group has shown what it says is an April 2026 build screenshot, development files and material purportedly connected to an Xbox development kit.",
+            "content": "The ongoing GTA 6 leak snafu may have just gotten progressively murkier. A second group, apparently unrelated to the original leaker CyberLeek, is now claiming to have obtained internal Rockstar Games material. It has reportedly shown several pieces ... [1405 chars]",
+            "url": "https://www.notebookcheck.net/GTA-6-leak-mess-deepens-as-second-group-surfaces-with-alleged-internal-build.1374366.0.html",
+            "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/GTA-6-second-leak.png",
+            "publishedAt": "2026-08-20T20:08:00Z",
             "lang": "en",
             "source": {
                 "id": "6f43ddc905277d3cab59591df0bcaa6d",
@@ -22,133 +67,88 @@
             }
         },
         {
-            "id": "b47a05616e3644460f8907c4a561cf7b",
-            "title": "Akira hackers disable EDR with Safe Mode, steal data but fail to encrypt",
-            "description": "An Akira ransomware affiliate disabled the endpoint detection and response (EDR) solution on a compromised system by restarting the machine into Safe Mode with Networking.",
-            "content": "An Akira ransomware affiliate disabled the endpoint detection and response (EDR) solution on a compromised system by restarting the machine into Safe Mode with Networking.\nThe attack occurred on August 4 after the hacker obtained initial access throu... [2368 chars]",
-            "url": "https://www.bleepingcomputer.com/news/security/akira-hackers-disable-edr-with-safe-mode-steal-data-but-fail-to-encrypt/",
-            "image": "https://www.bleepstatic.com/content/hl-images/2025/02/12/ransomware-3.jpg",
-            "publishedAt": "2026-08-13T20:47:02Z",
+            "id": "48849ecd45dd8bcfc7145d0aa95e7afc",
+            "title": "Microsoft Surface and other Windows on Arm PCs can't use Outlook or Teams right now",
+            "description": "Users report both apps crashing immediately, leaving them unable to access mail or meetings. It’s a serious issue for devices that Microsoft positions as the future of Windows.",
+            "content": "A Windows 11 update appears to break Microsoft Teams and Outlook on Windows on Arm PCs. Issues started popping up after the rollout of KB5121003, which began shipping this month on Patch Tuesday.\nBrian Stringfellow shared details about the problem th... [1855 chars]",
+            "url": "https://www.windowscentral.com/hardware/surface/microsoft-surface-and-other-windows-on-arm-pcs-cant-use-outlook-or-teams-right-now",
+            "image": "https://cdn.mos.cms.futurecdn.net/dx7zcvNknwhdADAZXFnFNa-2560-80.jpg",
+            "publishedAt": "2026-08-20T19:56:45Z",
             "lang": "en",
             "source": {
-                "id": "e9b427d05babd60d5abc63ffc14091c8",
-                "name": "BleepingComputer",
-                "url": "https://www.bleepingcomputer.com"
+                "id": "381257850cf94bc78a1ee054a8bb7748",
+                "name": "Windows Central",
+                "url": "https://www.windowscentral.com"
             }
         },
         {
-            "id": "ea36598f74ecc9ac17c30bf62de877e5",
-            "title": "Microsoft Outlook Vulnerability Allows Attackers to Execute Malicious Code Remotely",
-            "description": "Microsoft has disclosed a new remote code execution flaw in Outlook, tracked as CVE-2026-70329, as part of its August 2026 Patch Tuesday rollout.",
-            "content": "Microsoft has disclosed a new remote code execution flaw in Outlook, tracked as CVE-2026-70329, as part of its August 2026 Patch Tuesday rollout. The vulnerability stems from an integer overflow or wraparound weakness in Microsoft Office Outlook, and... [3100 chars]",
-            "url": "https://cybersecuritynews.com/microsoft-outlook-rce-vulnerability-2/",
-            "image": "http://cybersecuritynews.com/wp-content/uploads/2026/08/Microsoft-Outlook-RCE-Vulnerability1.webp",
-            "publishedAt": "2026-08-13T18:19:33Z",
+            "id": "4a6c7968c95b1bf048bbbce47210c463",
+            "title": "Call of Duty: Modern Warfare 4 Early Access Beta Start Time and Date (Countdown Timer)",
+            "description": "Waiting for the Call of Duty Modern Warfare 4 beta weekends? Check out the early access and open beta start times and dates right here.",
+            "content": "Call of Duty: Modern Warfare 4 Early Access Beta is almost here, and players are waiting for the moment to join the chaos. The first Beta will feature tons of new content, including a mission from Call of Duty: Modern Warfare 4’s campaign. If you wer... [2209 chars]",
+            "url": "https://beebom.com/call-of-duty-modern-warfare-4-early-access-beta-start-time-date-countdown-timer/",
+            "image": "https://static.beebom.com/wp-content/uploads/2026/08/call-of-duty-modern-warfare-4-early-access-beta-start-times-featured-image.jpeg",
+            "publishedAt": "2026-08-20T19:26:43Z",
             "lang": "en",
             "source": {
-                "id": "f72ff1db5bd129a8ceb92573b4717118",
-                "name": "cybersecuritynews.com",
-                "url": "https://cybersecuritynews.com"
+                "id": "8a3877d2249e51ed04e9995e5f897cbb",
+                "name": "Beebom",
+                "url": "https://beebom.com"
             }
         },
         {
-            "id": "89c48fed78296dc7a517d71b0eb4ac2f",
-            "title": "Apple Secures Nearly 40% Cheaper OLED Panels for iPhone 18 Pro Max",
-            "description": "Apple has reportedly cut iPhone 18 Pro Max OLED panel costs from up to $120 to $68 as rising RAM prices increase production costs.",
-            "content": "Apple has reportedly secured much lower OLED display prices for the upcoming iPhone 18 Pro models as rising memory costs put more pressure on iPhone production. The company is pushing suppliers to cut component prices as expensive RAM chips increase ... [1569 chars]",
-            "url": "https://www.macobserver.com/news/apple-secures-nearly-40-cheaper-oled-panels-for-iphone-18-pro-max/",
-            "image": "https://www.macobserver.com/wp-content/uploads/2025/06/Apple-Supplier-BOE-Scales-OLED-Production-.jpg",
-            "publishedAt": "2026-08-13T18:00:32Z",
+            "id": "f0ca2f12753cbfaf2a21d6f2aaede47f",
+            "title": "Google shares new Pixel 11 videos to hype up the new hardware",
+            "description": "Take a look at some of the features that Google thinks are the Pixel 11 Pro's biggest selling points.",
+            "content": "Joe Maring / Android Authority\nTL;DR\nGoogle launched the Pixel 11 series last week, opening pre-order on August 12.\nToday marks the actual beginning of Pixel 11 retail availability.\nGoogle’s publishing a series of three new feature-highlight videos t... [2708 chars]",
+            "url": "https://www.androidauthority.com/google-pixel-11-videos-3701248/",
+            "image": "https://www.androidauthority.com/wp-content/uploads/2026/08/google-pixel-11-pro-canyon-6-scaled.jpg",
+            "publishedAt": "2026-08-20T18:56:00Z",
             "lang": "en",
             "source": {
-                "id": "1f9e17d7f8b4462e5f2413ec925d46ea",
-                "name": "The Mac Observer",
-                "url": "https://www.macobserver.com"
+                "id": "8a46bf03bf6da851efc8bb3bdb7b26e8",
+                "name": "Android Authority",
+                "url": "https://www.androidauthority.com"
             }
         },
         {
-            "id": "3f33396fd905f93b9b1a0de76cde0568",
-            "title": "Google AI Just Released Gemini 3.7 Flash: A Coding and Agent Model at $0.75/1M Input Tokens",
-            "description": "Google DeepMind releases Gemini 3.7 Flash, a coding and agent model with 1M context, priced at $0.75/1M input.",
-            "content": "Google has released Gemini 3.7 Flash, the newest model in its Flash tier, three weeks after Gemini 3.6 Flash. The model card describes it as a refinement of 3.6 Flash with algorithmic improvements to the core reasoning foundation — not a new pretrain... [3954 chars]",
-            "url": "https://www.marktechpost.com/2026/08/13/google-ai-just-released-gemini-3-7-flash/",
-            "image": "https://www.marktechpost.com/wp-content/uploads/2026/08/blog619100-5.png",
-            "publishedAt": "2026-08-13T17:47:41Z",
+            "id": "9319a0e931c638fdfacc01685d9e2911",
+            "title": "Get Ready: How to Secure Your Call of Duty: Modern Warfare 4 Beta Access",
+            "description": "Excited for the next big Call of Duty release? You don't need to wait for the October 23 release date if you want to start playing Modern Warfare 4 early.",
+            "content": "Call of Duty: Modern Warfare 4, the next big release in Activision's long-running shooter franchise, comes out on October 23, 2026. But if you can't wait that long to get your hands on a new COD, you may not have to. By signing up for the Early Acces... [3762 chars]",
+            "url": "https://www.pcmag.com/news/get-ready-how-to-secure-your-call-of-duty-modern-warfare-4-beta-access",
+            "image": "https://i.pcmag.com/imagery/articles/03dKSjK2kOyJTPW47xrxPUD-2.fit_lim.size_1200x630.v1787244002.png",
+            "publishedAt": "2026-08-20T18:01:24Z",
             "lang": "en",
             "source": {
-                "id": "d5d7f0a3b0f2a346f12f467a794eb8d3",
-                "name": "MarkTechPost",
-                "url": "https://www.marktechpost.com"
+                "id": "1af0c07097d5cf01dc8beca711d490d1",
+                "name": "PCMag",
+                "url": "https://www.pcmag.com"
             }
         },
         {
-            "id": "bf20d96df5ac1c200376bd787b13b48e",
-            "title": "Microsoft patches LegacyHive Windows zero-day vulnerability",
-            "description": "Microsoft has released security patches to address a Windows zero-day vulnerability known as",
-            "content": "Microsoft has released security patches to address a Windows zero-day vulnerability known as \"LegacyHive,\" disclosed after the July 2026 Patch Tuesday.\nThe security flaw was disclosed by a security researcher who uses the \"Nightmare Eclipse\" handle i... [2477 chars]",
-            "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-legacyhive-windows-zero-day-vulnerability/",
-            "image": "https://www.bleepstatic.com/content/hl-images/2026/03/10/Windows.jpg",
-            "publishedAt": "2026-08-13T17:46:20Z",
+            "id": "6881bbdd7d1ca65c817a8385bb900382",
+            "title": "Samsung to Increase Foldable Smartphone Prices in India",
+            "description": "Samsung set to increase foldable smartphone prices in India soon. Discover how this move could impact your next tech upgrade and market trends.",
+            "content": "Launch of Samsung Galaxy Z Fold 8 Ultra, Fold 8, and Flip 8: Pricing and Specifications in India\nIn a bold market maneuver, Samsung has announced an impending price hike for its flagship foldable smartphones in India, encompassing the Galaxy Z Fold8 ... [2759 chars]",
+            "url": "https://www.rswebsols.com/news/samsung-poised-to-raise-prices-of-foldable-smartphones-in-india/",
+            "image": "https://cdn.rswebsols.com/wp-content/uploads/2026/07/Samsung-Galaxy-Z-Fold-8-Ultra.jpg",
+            "publishedAt": "2026-08-20T18:00:00Z",
             "lang": "en",
             "source": {
-                "id": "e9b427d05babd60d5abc63ffc14091c8",
-                "name": "BleepingComputer",
-                "url": "https://www.bleepingcomputer.com"
+                "id": "e93ec0ff108aa69fb928269fe0910a22",
+                "name": "RS Web Solutions",
+                "url": "https://www.rswebsols.com"
             }
         },
         {
-            "id": "5f281a8601314c93839322610de1fb35",
-            "title": "The new Instagram logo is the perfect embodiment of AI slop",
-            "description": "Opinion: Some remarks about the new wordmark accidentally being perfectly awful.",
-            "content": "Today, Instagram unveiled a refresh of its wordmark, accompanied by the usual bland corporate platitudes these kinds of announcements are always packaged with.\nHead of Instagram Adam Mosseri called it “leaner and more modern, with references to the o... [1616 chars]",
-            "url": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/",
-            "image": "https://cdn.arstechnica.net/wp-content/uploads/2026/08/instagram-2026-wordmark.png",
-            "publishedAt": "2026-08-13T17:32:10Z",
-            "lang": "en",
-            "source": {
-                "id": "344add8dabb753d03641ce9f246787ad",
-                "name": "Ars Technica",
-                "url": "https://arstechnica.com"
-            }
-        },
-        {
-            "id": "a4e0e79f3833e4136e58a57dd92a49fe",
-            "title": "Tecno POVA 8 Pro 5G Prepares For Launch In India",
-            "description": "Tecno POVA 8 Pro 5G launches in India with a rear display, Dimensity 7400 chipset, 144Hz AMOLED screen and 6500mAh battery.",
-            "content": "Tecno is gearing up to launch a new device, the Tecno POVA 8 Pro 5G, in India as well as other markets. This coming device will succeed the POVA 7, improving on performance but keeping some design elements.\nThis coming device will be a mid-range devi... [3196 chars]",
-            "url": "https://techgenyz.com/tecno-pova-8-pro-5g-india-launch-features/",
-            "image": "https://techgenyz.com/wp-content/uploads/2026/08/tecno-pova-8-pro-5g.webp",
-            "publishedAt": "2026-08-13T17:10:55Z",
-            "lang": "en",
-            "source": {
-                "id": "9710fd0a8060ce716a3567901da14e9a",
-                "name": "Techgenyz",
-                "url": "https://techgenyz.com"
-            }
-        },
-        {
-            "id": "8a98640202a92362f82bccc02877c501",
-            "title": "WhatsApp tests on-device AI Scam Alert for suspicious messages",
-            "description": "WhatsApp is testing Scam Alert, an optional on-device machine-learning feature that warns users about potential scam messages without sending message content to its servers.",
-            "content": "WhatsApp is testing a new feature designed to warn users about potentially fraudulent messages without sending the contents of their conversations to its servers.\nCalled Scam Alert, the optional tool uses a machine-learning model that runs directly o... [2567 chars]",
-            "url": "https://t2online.in/tech/tech-news/whatsapp-tests-scam-alert-to-detect-suspicious-messages-on-your-device/2007236",
-            "image": "https://images.t2online.in/cdn-cgi/image/width=1280,height=720,fit=crop,gravity=auto,quality=70/https://apis.t2online.in/getImageStream/8436/1786640607633.jpg",
-            "publishedAt": "2026-08-13T17:01:00Z",
-            "lang": "en",
-            "source": {
-                "id": "92bb3036dd91749dde09b90d23c9a7ba",
-                "name": "t2ONLINE",
-                "url": "https://t2online.in"
-            }
-        },
-        {
-            "id": "bf825857e7f605f1fdf32291f433a942",
-            "title": "Apple Arcade Reveals Exciting Puzzle Games Update With Block Blast!+ and Art of Fauna+",
-            "description": "Apple Arcade adds Block Blast!+ and Art of Fauna: Cozy Puzzles+ on September 3, bringing new puzzle games and updates for subscribers.",
-            "content": "Apple is growing the Apple Arcade gaming catalog with two more puzzle-centered titles, so subscribers get extra choices for quick little challenges and also the more relaxed kind of play\nBlock Blast!+ and Art of Fauna: Cozy Puzzles+ are set to land o... [4989 chars]",
-            "url": "https://techgenyz.com/apple-arcade-block-blast-art-of-fauna-puzzles/",
-            "image": "https://techgenyz.com/wp-content/uploads/2026/08/apple-arcade.webp",
-            "publishedAt": "2026-08-13T16:36:50Z",
+            "id": "b25c219c977d4a0f3a9177b23efb781a",
+            "title": "Samsung DualVent Microwave Promises Better Kitchen Fume Capture",
+            "description": "Samsung DualVent microwave brings front and bottom ventilation, up to 82% fume capture, Auto Connectivity and a fingerprint-resistant finish.",
+            "content": "Samsung has just released a new Over-the-Range Microwave, the Samsung DualVent microwave made to deal with a specific weak point you usually see with standard microwave venting systems- you know the ones that struggle with cooking fumes coming from t... [7630 chars]",
+            "url": "https://techgenyz.com/samsung-dualvent-microwave-82-percent-fume-capture/",
+            "image": "https://techgenyz.com/wp-content/uploads/2026/08/samsung-microwave.webp",
+            "publishedAt": "2026-08-20T17:50:25Z",
             "lang": "en",
             "source": {
                 "id": "9710fd0a8060ce716a3567901da14e9a",

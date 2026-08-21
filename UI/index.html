@@ -54,17 +54,10 @@
                     <i data-lucide="globe"></i>
                     <span>Automatic News</span>
                 </a>
-                <a href="#" class="nav-item" data-tab="categories">
-                    <i data-lucide="layout-grid"></i>
-                    <span>Categories</span>
-                </a>
+
                 <a href="#" class="nav-item" data-tab="history">
                     <i data-lucide="clock"></i>
                     <span>History</span>
-                </a>
-                <a href="#" class="nav-item" data-tab="daily">
-                    <i data-lucide="calendar"></i>
-                    <span>Daily Update</span>
                 </a>
                 <a href="#" class="nav-item" data-tab="bookmarks">
                     <i data-lucide="bookmark"></i>
@@ -78,20 +71,13 @@
                     <i data-lucide="info"></i>
                     <span>About Us</span>
                 </a>
-            </nav>
 
-            <!-- Stay Updated Card -->
-            <div class="newsletter-card">
-                <h3>Stay Updated</h3>
-                <p>Get the latest news and AI-generated podcasts in your inbox daily.</p>
-                <button class="btn btn-primary btn-icon-left" id="btn-enable-daily">
-                    <i data-lucide="send"></i>
-                    Enable Daily Update
-                </button>
-                <div class="newsletter-bg">
-                    <i data-lucide="mail"></i>
+                <!-- Stay Updated Card -->
+                <div class="newsletter-card">
+                    <h3><i data-lucide="bell"></i> Stay Updated</h3>
+                    <p>Get the latest news and AI-generated podcasts in your inbox daily.</p>
                 </div>
-            </div>
+            </nav>
         </aside>
 
         <!-- Main Workspace -->
@@ -185,15 +171,6 @@
                             </select>
                         </div>
                         
-                        <div class="preference-item" id="category-preference-item">
-                            <label><i data-lucide="tag"></i> Category</label>
-                            <select id="pref-category">
-                                <option value="Sports" selected>Sports</option>
-                                <option value="Health">Health</option>
-                                <option value="Technology">Technology</option>
-                                <option value="General">General</option>
-                            </select>
-                        </div>
 
                         <div class="preference-item">
                             <label><i data-lucide="mic-2"></i> AI Voice</label>
@@ -246,6 +223,24 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Bookmarks Section -->
+                <section class="section-container bookmarks-section" id="bookmarks-section">
+                    <h3 class="section-title"><i data-lucide="bookmark"></i> Bookmarked Podcasts</h3>
+                    <div class="podcasts-list" id="bookmarks-container">
+                        <div class="podcast-skeleton">No bookmarked podcasts yet. Click the bookmark icon on any podcast to save it!</div>
+                    </div>
+                </section>
+
+                <!-- About Us Section -->
+                <section class="section-container about-us-section" id="about-us-section">
+                    <h3 class="section-title" style="color: var(--primary);"><i data-lucide="info"></i> About Us</h3>
+                    <div class="input-card">
+                        <p class="card-desc" style="font-size: 18px; line-height: 1.6; color: #ffffff; font-weight: 700;">
+                            NewsPod transforms the latest news from GNews into personalized podcasts. Choose your category, language, and voice, then listen to your news anytime, anywhere.
+                        </p>
+                    </div>
+                </section>
             </div>
         </main>
 
@@ -267,11 +262,9 @@
             <!-- Center Controls -->
             <div class="player-controls-container">
                 <div class="player-controls">
-                    <button class="icon-btn secondary-btn" id="player-shuffle"><i data-lucide="shuffle"></i></button>
                     <button class="icon-btn secondary-btn" id="player-prev"><i data-lucide="skip-back"></i></button>
                     <button class="icon-btn play-btn" id="player-play-pause"><i data-lucide="play"></i></button>
                     <button class="icon-btn secondary-btn" id="player-next"><i data-lucide="skip-forward"></i></button>
-                    <button class="icon-btn secondary-btn" id="player-repeat"><i data-lucide="repeat"></i></button>
                 </div>
                 
                 <div class="player-progress-bar">
