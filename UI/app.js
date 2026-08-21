@@ -36,6 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const automaticWorkspace = document.getElementById('automatic-workspace');
     const prefLanguage = document.getElementById('pref-language');
     const prefVoice = document.getElementById('pref-voice');
+    const prefCategory = document.getElementById('pref-category');
+    const categoryCards = document.querySelectorAll('.category-card');
+    const prefCategoryWrapper = document.getElementById('pref-category-wrapper');
     const btnGenerate = document.getElementById('btn-generate');
     const newsTextarea = document.getElementById('news-textarea');
     const loadingOverlay = document.getElementById('loading-overlay');
@@ -117,15 +120,42 @@ document.addEventListener('DOMContentLoaded', () => {
         if (mode === 'manual') {
             manualWorkspace.classList.remove('hidden');
             automaticWorkspace.classList.add('hidden');
+            if (prefCategoryWrapper) prefCategoryWrapper.style.display = 'none';
             document.querySelector('[data-mode="manual"]').classList.add('active');
             document.querySelector('[data-mode="automatic"]').classList.remove('active');
         } else {
             manualWorkspace.classList.add('hidden');
             automaticWorkspace.classList.remove('hidden');
+            if (prefCategoryWrapper) prefCategoryWrapper.style.display = 'flex';
             document.querySelector('[data-mode="manual"]').classList.remove('active');
             document.querySelector('[data-mode="automatic"]').classList.add('active');
         }
         document.querySelector('.page-container').scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Category Card Selection & Dropdown Sync
+    categoryCards.forEach(card => {
+        card.addEventListener('click', () => {
+            categoryCards.forEach(c => c.classList.remove('active'));
+            card.classList.add('active');
+            const selectedCat = card.getAttribute('data-category');
+            if (prefCategory) {
+                prefCategory.value = selectedCat;
+            }
+        });
+    });
+
+    if (prefCategory) {
+        prefCategory.addEventListener('change', () => {
+            const selectedCat = prefCategory.value;
+            categoryCards.forEach(card => {
+                if (card.getAttribute('data-category') === selectedCat) {
+                    card.classList.add('active');
+                } else {
+                    card.classList.remove('active');
+                }
+            });
+        });
     }
 
     // 3. Language & Voice Dropdown Integration
@@ -378,7 +408,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const language = prefLanguage.value;
         const selectedOpt = prefLanguage.options[prefLanguage.selectedIndex];
         const lang_code = selectedOpt.getAttribute('data-code');
-        const category = 'General';
+        const selectedCategory = prefCategory ? prefCategory.value : 'General';
+        const category = currentMode === 'automatic' ? selectedCategory : 'General';
         const voice = prefVoice.value;
 
         let bodyData = { language, lang_code, category, voice };
@@ -397,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             url = '/api/generate/automatic';
             loadingText.textContent = `Collecting ${category} News...`;
-            loadingDesc.textContent = "Fetching news updates from global headlines database, summarizing content, and rendering audio...";
+            loadingDesc.textContent = `Fetching ${category} news updates from global headlines database, summarizing content, and rendering audio...`;
         }
 
         // Show overlay

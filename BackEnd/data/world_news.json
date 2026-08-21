@@ -1,0 +1,160 @@
+{
+    "information": {
+        "realTimeArticles": {
+            "message": "Real-time news data is only available on paid plans. Free plan has a 12-hour delay. Upgrade your plan here to remove the delay: https://gnews.io/change-plan"
+        }
+    },
+    "totalArticles": 202272,
+    "articles": [
+        {
+            "id": "94aef42e9ff804bdc67b744deb47f05c",
+            "title": "8 on board killed as twin-engine Cessna charter plane crashes in remote Alaska",
+            "description": "US News: Eight people aboard a twin-engine Cessna charter plane were killed after it crashed Thursday near a remote radar site in western Alaska, the Alaskan C.",
+            "content": "8 on board as Cessna charter plane crashes near Alaska radar station (Image: X@/marionawfal)\nEight people aboard a twin-engine Cessna charter plane were killed after it crashed Thursday near a remote radar site in western Alaska, the Alaskan Command ... [939 chars]",
+            "url": "https://timesofindia.indiatimes.com/world/us/8-on-board-as-twin-engine-cessna-charter-plane-crashes-in-remote-alaska/articleshow/133391321.cms",
+            "image": "https://static.toiimg.com/thumb/msid-133393894,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "publishedAt": "2026-08-21T02:56:00Z",
+            "lang": "en",
+            "source": {
+                "id": "9c931d3332c3a87c89b804230892aa64",
+                "name": "The Times of India",
+                "url": "https://timesofindia.indiatimes.com"
+            }
+        },
+        {
+            "id": "981dd2169e87340d9825d85b0225f67e",
+            "title": "Imran Khan won't fight army chief Asim Munir if released, says top aide",
+            "description": "A close aide to Imran Khan says the jailed former PM would avoid a clash with army chief Asim Munir if freed, a rare sign of a possible thaw between PTI and Pakistan's military.",
+            "content": "He added that reconciliation does not mean rolling over. “That doesn’t mean you go loggerheads with the establishment, with the military leader,” Bukhari said. “You control your own hurt. You curb your own pain. You swallow it for the betterment of y... [2554 chars]",
+            "url": "https://indianexpress.com/article/world/pakistan-imran-khan-aide-army-chief-reconciliation-10842627/",
+            "image": "https://images.indianexpress.com/2026/08/US-4-8.jpg",
+            "publishedAt": "2026-08-21T02:46:13Z",
+            "lang": "en",
+            "source": {
+                "id": "fb9b2a133349e3c8aa9c4ccde8d9400c",
+                "name": "The Indian Express",
+                "url": "https://indianexpress.com"
+            }
+        },
+        {
+            "id": "9052ddcc2fb11ebf78c61c9f0d305480",
+            "title": "Express train kills 4 workers carrying out weed-control work on tracks in Japan",
+            "description": "Rest of World News: Four workers carrying out weed-control work on a railway track in Japan were killed after they were struck by an express train as it entered Shin-Kanu.",
+            "content": "4 workers killed after train hits track workers in Japan\nFour workers carrying out weed-control work on a railway track in Japan were killed after they were struck by an express train as it entered Shin-Kanuma Station, north of Tokyo. The collision o... [2258 chars]",
+            "url": "https://timesofindia.indiatimes.com/world/rest-of-world/express-train-kills-4-workers-carrying-out-weed-control-work-on-tracks-in-japan/articleshow/133390808.cms",
+            "image": "https://static.toiimg.com/thumb/msid-133390833,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "publishedAt": "2026-08-21T02:01:00Z",
+            "lang": "en",
+            "source": {
+                "id": "9c931d3332c3a87c89b804230892aa64",
+                "name": "The Times of India",
+                "url": "https://timesofindia.indiatimes.com"
+            }
+        },
+        {
+            "id": "5d2029c864fc789cdd33981c4b171eea",
+            "title": "Ukraine Downed 90% of Russian Cruise Missiles",
+            "description": "Zelensky says ballistic missiles remain Ukraine’s biggest air-defense challenge after the deadly Russian attack on Kyiv.",
+            "content": "Ukraine intercepted around 90% of the cruise missiles fired by Russia during its massive overnight attack on Kyiv and the surrounding region, but ballistic missiles remain a much greater challenge for Ukrainian air defenses, President Volodymyr Zelen... [1769 chars]",
+            "url": "https://www.kyivpost.com/post/82785",
+            "image": "https://static.kyivpost.com/storage/2026/08/21/6898f06d68d78b28a984748964e03c3a.jpg?w=1200&q=90&f=jpg",
+            "publishedAt": "2026-08-21T02:00:44Z",
+            "lang": "en",
+            "source": {
+                "id": "02c887af92e2e2e697e74bf65abd5a9b",
+                "name": "Kyiv Post",
+                "url": "https://www.kyivpost.com"
+            }
+        },
+        {
+            "id": "146f04c0e9a3faf6f5e057f2502af827",
+            "title": "U.S. pushes allies, China to back Trump’s economic war on Iran",
+            "description": "U.S. Treasury Secretary urges allies and China to support Trump's economic campaign against Iran as tensions escalate.",
+            "content": "The United States on Thursday (August 20, 2026) warned allies and China to join President Donald Trump’s new campaign to isolate the Iranian economy, vowing that Washington would “collapse this regime” in Tehran.\nU.S. Treasury Secretary Scott Bessent... [2644 chars]",
+            "url": "https://www.thehindu.com/news/international/us-pushes-allies-china-to-back-trumps-economic-war-on-iran/article71371992.ece",
+            "image": "https://th-i.thgim.com/public/incoming/umfgej/article71371993.ece/alternates/LANDSCAPE_1200/2026-08-20T153741Z_1726519747_RC2F2NAG98JE_RTRMADP_3_USA-TRUMP.JPG",
+            "publishedAt": "2026-08-20T23:33:00Z",
+            "lang": "en",
+            "source": {
+                "id": "b186b851cfda2f4463224771573fadf2",
+                "name": "The Hindu",
+                "url": "https://www.thehindu.com"
+            }
+        },
+        {
+            "id": "8504cf015ec6e609692b669992029fa1",
+            "title": "Ex-Pak PM Imran Khan moved to private hospital from prison after SC order",
+            "description": "Pakistan News: Imprisoned former Pakistan Prime Minister Imran Khan was shifted from Adiala prison to a private hospital in Islamabad after midnight Thursday for a m.",
+            "content": "Imran Khan’s transfer follows months of health concerns, including a dispute over worsening vision in his right eye\nImprisoned former Pakistan Prime Minister Imran Khan was shifted from Adiala prison to a private hospital in Islamabad after midnight ... [1924 chars]",
+            "url": "https://timesofindia.indiatimes.com/world/pakistan/ex-pak-pm-imran-khan-moved-to-private-hospital-from-prison-after-sc-order/articleshow/133389827.cms",
+            "image": "https://static.toiimg.com/thumb/msid-133389834,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "publishedAt": "2026-08-20T23:20:00Z",
+            "lang": "en",
+            "source": {
+                "id": "9c931d3332c3a87c89b804230892aa64",
+                "name": "The Times of India",
+                "url": "https://timesofindia.indiatimes.com"
+            }
+        },
+        {
+            "id": "0be0e6bc1bd86d43ffa941f42c34c64d",
+            "title": "Houthis Move to Gain Complete Control Over Crucial Bab el-Mandeb Oil Chokepoint",
+            "description": "Greater Houthi control could further threaten a critical global trade artery, extending disruption even as Bab el-Mandeb traffic remains far healthier than traffic through Hormuz.",
+            "content": "The Yemeni Houthis are planning to seize land along the Yemeni coast in the Bab el-Mandeb Strait, tightening their control of the chokepoint. The information comes from the minister of information in the government that the Houthis are fighting in Ye... [3903 chars]",
+            "url": "https://oilprice.com/Geopolitics/Middle-East/Houthis-Move-to-Gain-Complete-Control-Over-Crucial-Bab-el-Mandeb-Oil-Chokepoint.html",
+            "image": "https://d32r1sh890xpii.cloudfront.net/article/1200x675/2026-08-20_zjcyhcuwxn.jpg",
+            "publishedAt": "2026-08-20T23:00:00Z",
+            "lang": "en",
+            "source": {
+                "id": "0bfd2fc1956a6c3bdfd830c196c1fbab",
+                "name": "Crude Oil Prices Today | OilPrice.com",
+                "url": "https://oilprice.com"
+            }
+        },
+        {
+            "id": "b36fb3eb052a5e064477e6222ad8e4fc",
+            "title": "Tasmania spent 28 years removing invasive carp from two lakes; after 49,301 fish were taken out, the state declared carp functionally eradicated and trout began bouncing back",
+            "description": "Science News: An intensive 28-year eradication campaign has eliminated common carp from two major Tasmanian lakes, achieving what fisheries experts around the world.",
+            "content": "Invasive Species: Why Are Asian Carp a Problem?\nAn intensive 28-year eradication campaign has eliminated common carp from two major Tasmanian lakes, achieving what fisheries experts around the world once considered almost impossible in a large, open ... [5713 chars]",
+            "url": "https://timesofindia.indiatimes.com/science/tasmania-spent-28-years-removing-invasive-carp-from-two-lakes-after-49301-fish-were-taken-out-the-state-declared-carp-functionally-eradicated-and-trout-began-bouncing-back/articleshow/133384589.cms",
+            "image": "https://static.toiimg.com/thumb/msid-133387269,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "publishedAt": "2026-08-20T19:47:00Z",
+            "lang": "en",
+            "source": {
+                "id": "9c931d3332c3a87c89b804230892aa64",
+                "name": "The Times of India",
+                "url": "https://timesofindia.indiatimes.com"
+            }
+        },
+        {
+            "id": "07250f516792d290320772cbb8651d25",
+            "title": "China's solar push linked to bird diversity losses across 2,344 counties",
+            "description": "The global push for solar energy expansion could carry hidden biodiversity costs, according to a study on China published in the journal Science on Thursday.",
+            "content": "The global push for solar energy expansion could carry hidden biodiversity costs, according to a study on China published in the journal Science on Thursday.\nAccording to the research spanning more than 2,300 Chinese counties, pro-solar policies led ... [3162 chars]",
+            "url": "https://phys.org/news/2026-08-china-solar-linked-bird-diversity.html",
+            "image": "https://scx2.b-cdn.net/gfx/news/2026/solar-panels-are-seen.jpg",
+            "publishedAt": "2026-08-20T18:50:01Z",
+            "lang": "en",
+            "source": {
+                "id": "6063be7565dcd637bb5d2946ed6c5329",
+                "name": "Phys.org",
+                "url": "https://phys.org"
+            }
+        },
+        {
+            "id": "24dd18881405d14772683773218f9975",
+            "title": "6.6-magnitude earthquake strikes central Peru",
+            "description": "Rest of World News: An earthquake of magnitude 6.6 struck central Peru on Thursday, news agency Reuters reported citing the German Research Centre for Geosciences (GFZ) s.",
+            "content": "Earthquake in Peru\nAn earthquake of magnitude 6.6 struck central Peru on Thursday, news agency Reuters reported citing the German Research Centre for Geosciences (GFZ) said. The quake occurred at a depth of 10 km (6.21 miles), according to GFZ. There... [374 chars]",
+            "url": "https://timesofindia.indiatimes.com/world/rest-of-world/6-6-magnitude-earthquake-strikes-central-peru/articleshow/133386487.cms",
+            "image": "https://static.toiimg.com/thumb/msid-133386494,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg",
+            "publishedAt": "2026-08-20T18:43:00Z",
+            "lang": "en",
+            "source": {
+                "id": "9c931d3332c3a87c89b804230892aa64",
+                "name": "The Times of India",
+                "url": "https://timesofindia.indiatimes.com"
+            }
+        }
+    ]
+}

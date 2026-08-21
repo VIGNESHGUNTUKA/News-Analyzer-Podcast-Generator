@@ -72,7 +72,7 @@ class AutomaticNewsRequest(BaseModel):
 
 @app.get("/api/headlines")
 def get_headlines():
-    categories = ['sports', 'technology', 'general', 'health']
+    categories = ['sports', 'technology', 'general', 'health', 'business', 'politics', 'entertainment', 'science', 'world']
     all_headlines = []
 
     for cat in categories:

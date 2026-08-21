@@ -1,7 +1,7 @@
 from config import voices
 def category_selection(name):
     while True:
-        choice=int(input(f"HELLO {name} SELECT THE NEWS CATEGORY:\n1.SPORTS\n2.HEALTH\n3.TECHNOLOGY\n4.General\n"))
+        choice=int(input(f"HELLO {name} SELECT THE NEWS CATEGORY:\n1.SPORTS\n2.HEALTH\n3.TECHNOLOGY\n4.BUSINESS\n5.POLITICS\n6.ENTERTAINMENT\n7.SCIENCE\n8.WORLD\n9.GENERAL\n"))
         match choice:
             case 1:
                 category = "Sports"
@@ -10,6 +10,16 @@ def category_selection(name):
             case 3:
                 category = "Technology"
             case 4:
+                category = "Business"
+            case 5:
+                category = "Politics"
+            case 6:
+                category = "Entertainment"
+            case 7:
+                category = "Science"
+            case 8:
+                category = "World"
+            case 9:
                 category = "General"
             case _:
                 print("Invalid Choice. Try Again.")

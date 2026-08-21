@@ -51,6 +51,23 @@ CATEGORY_KEYWORDS = {
         "cinema", "director", "celebrity", "song", "album",
         "show", "television", "series", "streaming", "festival",
         "entertainment", "hollywood", "bollywood", "performance"
+    },
+
+    "Science": {
+        "science", "space", "astronomy", "physics", "chemistry",
+        "biology", "research", "discovery", "laboratory", "galaxy",
+        "universe", "nasa", "isro", "planet", "satellite", "experiment"
+    },
+
+    "World": {
+        "world", "global", "international", "nation", "country",
+        "summit", "foreign", "diplomacy", "treaty", "ambassador",
+        "border", "united", "nations", "peace", "conflict"
+    },
+
+    "General": {
+        "news", "today", "report", "update", "headline",
+        "breaking", "latest", "daily", "bulletin", "current"
     }
 }
 # CONNECTORS BETWEEN THE LINES

@@ -151,8 +151,113 @@
                     <!-- Automatic Mode Content (Hidden by default) -->
                     <div id="automatic-workspace" class="workspace-pane hidden">
                         <div class="input-card select-card">
-                            <label>Automatic News Collector</label>
-                            <p class="card-desc">AI will fetch top headlines dynamically matching your chosen Category from global news networks.</p>
+                            <div class="card-header-flex">
+                                <div>
+                                    <label><i data-lucide="globe"></i> Select Automatic News Category</label>
+                                    <p class="card-desc">Choose a category below. AI will fetch top headlines dynamically matching your selected category from global news networks.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="category-grid" id="category-cards-container">
+                                <div class="category-card" data-category="Sports">
+                                    <div class="category-icon-wrapper">
+                                        <i data-lucide="trophy"></i>
+                                    </div>
+                                    <div class="category-info">
+                                        <h5>Sports</h5>
+                                        <p>Matches, Scores & Tournaments</p>
+                                    </div>
+                                    <i data-lucide="check-circle-2" class="check-icon"></i>
+                                </div>
+
+                                <div class="category-card" data-category="Health">
+                                    <div class="category-icon-wrapper">
+                                        <i data-lucide="heart-pulse"></i>
+                                    </div>
+                                    <div class="category-info">
+                                        <h5>Health</h5>
+                                        <p>Medical, Wellness & Fitness</p>
+                                    </div>
+                                    <i data-lucide="check-circle-2" class="check-icon"></i>
+                                </div>
+
+                                <div class="category-card active" data-category="Technology">
+                                    <div class="category-icon-wrapper">
+                                        <i data-lucide="cpu"></i>
+                                    </div>
+                                    <div class="category-info">
+                                        <h5>Technology</h5>
+                                        <p>AI, Gadgets & Software</p>
+                                    </div>
+                                    <i data-lucide="check-circle-2" class="check-icon"></i>
+                                </div>
+
+                                <div class="category-card" data-category="Business">
+                                    <div class="category-icon-wrapper">
+                                        <i data-lucide="trending-up"></i>
+                                    </div>
+                                    <div class="category-info">
+                                        <h5>Business</h5>
+                                        <p>Markets, Stocks & Economy</p>
+                                    </div>
+                                    <i data-lucide="check-circle-2" class="check-icon"></i>
+                                </div>
+
+                                <div class="category-card" data-category="Politics">
+                                    <div class="category-icon-wrapper">
+                                        <i data-lucide="landmark"></i>
+                                    </div>
+                                    <div class="category-info">
+                                        <h5>Politics</h5>
+                                        <p>Policy, Elections & Governance</p>
+                                    </div>
+                                    <i data-lucide="check-circle-2" class="check-icon"></i>
+                                </div>
+
+                                <div class="category-card" data-category="Entertainment">
+                                    <div class="category-icon-wrapper">
+                                        <i data-lucide="film"></i>
+                                    </div>
+                                    <div class="category-info">
+                                        <h5>Entertainment</h5>
+                                        <p>Movies, Music & Pop Culture</p>
+                                    </div>
+                                    <i data-lucide="check-circle-2" class="check-icon"></i>
+                                </div>
+
+                                <div class="category-card" data-category="Science">
+                                    <div class="category-icon-wrapper">
+                                        <i data-lucide="atom"></i>
+                                    </div>
+                                    <div class="category-info">
+                                        <h5>Science</h5>
+                                        <p>Space, Research & Discoveries</p>
+                                    </div>
+                                    <i data-lucide="check-circle-2" class="check-icon"></i>
+                                </div>
+
+                                <div class="category-card" data-category="World">
+                                    <div class="category-icon-wrapper">
+                                        <i data-lucide="globe-2"></i>
+                                    </div>
+                                    <div class="category-info">
+                                        <h5>World</h5>
+                                        <p>Global News & Foreign Affairs</p>
+                                    </div>
+                                    <i data-lucide="check-circle-2" class="check-icon"></i>
+                                </div>
+
+                                <div class="category-card" data-category="General">
+                                    <div class="category-icon-wrapper">
+                                        <i data-lucide="newspaper"></i>
+                                    </div>
+                                    <div class="category-info">
+                                        <h5>General</h5>
+                                        <p>Top Headlines & Multi-topic</p>
+                                    </div>
+                                    <i data-lucide="check-circle-2" class="check-icon"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -161,6 +266,21 @@
                 <section class="section-container">
                     <h3 class="section-title"><i data-lucide="sliders"></i> Podcast Preferences</h3>
                     <div class="preferences-panel">
+                        <div class="preference-item" id="pref-category-wrapper">
+                            <label><i data-lucide="tag"></i> Category</label>
+                            <select id="pref-category">
+                                <option value="Sports">Sports 🏆</option>
+                                <option value="Health">Health 🩺</option>
+                                <option value="Technology" selected>Technology 💻</option>
+                                <option value="Business">Business 💼</option>
+                                <option value="Politics">Politics 🏛️</option>
+                                <option value="Entertainment">Entertainment 🎬</option>
+                                <option value="Science">Science 🔬</option>
+                                <option value="World">World 🌐</option>
+                                <option value="General">General 📰</option>
+                            </select>
+                        </div>
+
                         <div class="preference-item">
                             <label><i data-lucide="languages"></i> Language</label>
                             <select id="pref-language">
