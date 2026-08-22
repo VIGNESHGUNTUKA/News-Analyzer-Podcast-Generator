@@ -34,8 +34,8 @@ from ReportForAutomaticNews import generate_report_for_automatic
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="NewsPod AI API",
-    description="Backend API for AI-powered News Podcast Generator",
+    title="NewsPod API",
+    description="Backend API for Multilingual News Podcast Generator",
     version="1.0.0"
 )
 

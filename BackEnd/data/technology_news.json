@@ -4,61 +4,106 @@
             "message": "Real-time news data is only available on paid plans. Free plan has a 12-hour delay. Upgrade your plan here to remove the delay: https://gnews.io/change-plan"
         }
     },
-    "totalArticles": 321780,
+    "totalArticles": 302058,
     "articles": [
         {
-            "id": "e3fd907f76522a720e9d320c2311b696",
-            "title": "Will Apple’s $2,199 iPhone Ultra fix the foldable market?",
-            "description": "Rothschild upgrades Apple stock with a $400 target, projecting 14M iPhone Ultra sales at $2,199. Here is why Wall Street is betting on a foldable iPhone.",
-            "content": "Most technology gets cheaper the longer it stays on sale. That is the bargain buyers have come to expect. Wait a generation or two, and the gadget that cost a fortune at launch turns up at half the price with twice the storage.\nFolding phones never h... [7390 chars]",
-            "url": "https://www.thestreet.com/technology/rothschild-bets-on-apple-iphone-ultra-foldable-phone",
-            "image": "https://www.thestreet.com/.image/NDA6MDAwMDAwMDAzMTUxNTE0/apple-iphones-for-sale.jpg?profile=share16-9",
-            "publishedAt": "2026-08-21T00:07:00Z",
+            "id": "7cb44379586cdcbb69fdc2c1d70c79fe",
+            "title": "iPhone 18 Pro Max: Price in India, launch date, camera upgrade, new processor and more we know ahead of September launch",
+            "description": "Apple is expected to unveil the iPhone 18 Pro Max in September with the A20 Pro chip, camera upgrades, improved battery efficiency, and a possible price increase in India.",
+            "content": "Apple is expected to unveil the iPhone 18 Pro Max at its annual September launch event, where the company is also likely to introduce the iPhone 18 Pro and a new iPhone Ultra. While Apple has not officially confirmed the event, multiple reports sugge... [2797 chars]",
+            "url": "https://www.moneycontrol.com/technology/iphone-18-pro-max-price-in-india-launch-date-camera-upgrade-new-processor-and-more-we-know-ahead-of-september-launch-article-14012717.html",
+            "image": "https://images.moneycontrol.com/static-mcnews/2026/08/20260811041609_iPhone-18-Pro-Max-colour-options.png",
+            "publishedAt": "2026-08-22T03:36:54Z",
             "lang": "en",
             "source": {
-                "id": "6194c08bbdf9b4ce58c3e3557fa2c159",
-                "name": "thestreet.com",
-                "url": "https://www.thestreet.com"
+                "id": "d602a2d12746f6ca2f63931f376faf99",
+                "name": "Moneycontrol.com",
+                "url": "https://www.moneycontrol.com"
             }
         },
         {
-            "id": "f1b767e4a9d6c480a2d9fbe8996e39c4",
-            "title": "A beloved Pixel gesture just stopped working for some users",
-            "description": "And there isn't a fix yet",
-            "content": "If you're a Pixel owner, you know Google is always working behind the scenes to bring more features and enhancements to its devices. We love that the Pixel gets rapid updates when compared to the competition.\nHowever, updates aren't always a good thi... [1971 chars]",
-            "url": "https://www.androidpolice.com/flip-to-shhh-not-working-on-some-pixel-phones/",
-            "image": "https://static0.anpoimages.com/wordpress/wp-content/uploads/wm/2026/08/the-art-of-being-content-0-2-screenshot.png?w=1600&h=900&fit=crop",
-            "publishedAt": "2026-08-21T00:06:00Z",
+            "id": "8dc6009fcdc12e7d4122f50a6452adbb",
+            "title": "Apple cuts jobs in Siri, Vision Pro immersive video and gaming teams",
+            "description": "Apple Inc. is laying off over 200 employees from its Siri digital assistant and Vision Pro headset teams to streamline operations and enhance its focus on new devices and artificial intelligence technologies. The layoffs include changes to the Intelligent Systems Experience team as Apple shifts toward AI-driven features and prepares for the launch of smart glasses.",
+            "content": "Apple Inc. is cutting jobs across teams responsible for the Siri digital assistant and the Vision Pro headset, part of an effort to focus on new devices and artificial intelligence.\nApple is also laying off employees in its Intelligent Systems Experi... [3562 chars]",
+            "url": "https://retail.economictimes.indiatimes.com/news/consumer-durables-and-information-technology/consumer-electronics/apple-cuts-jobs-in-siri-vision-pro-immersive-video-and-gaming-teams/133416694",
+            "image": "https://etimg.etb2bimg.com/thumb/msid-133416694,imgsize-42332,width-1200,height=627,overlay-etretail,resizemode-75/consumer-durables-and-information-technology/consumer-electronics/apple-cuts-jobs-in-siri-vision-pro-immersive-video-and-gaming-teams.jpg",
+            "publishedAt": "2026-08-22T03:31:59Z",
             "lang": "en",
             "source": {
-                "id": "22e6fb8c6790d769287f0f057fea36e9",
-                "name": "Android Police",
-                "url": "https://www.androidpolice.com"
+                "id": "2da407367e094ebce13447927d080c14",
+                "name": "ET Retail",
+                "url": "https://retail.economictimes.indiatimes.com"
             }
         },
         {
-            "id": "14331e787cdc75b511abc2513a1def76",
-            "title": "Galaxy S26 FE Will Reveal Which Phones Get Samsung’s Free Upgrade",
-            "description": "Will Samsung's new Galaxy S26 FE get Gemini Intelligence? The answer will reveal exactly which Galaxy phones Google's transformative new AI actually supports.",
-            "content": "Google And Samsung Silent On Galaxy S26 FE AI tools\nFor the uninitiated, Gemini Intelligence is a big step beyond the AI features most people are used to. It’s not a chatbot you open in an app and type questions into. It’s an agentic AI, meaning it a... [3091 chars]",
-            "url": "https://www.forbes.com/sites/jaymcgregor/2026/08/20/galaxy-s26-fe-release-date-gemini-intelligence-free-upgrade/",
-            "image": "https://imageio.forbes.com/specials-images/imageserve/6a873bbbadf7b606c57fd6c7/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
-            "publishedAt": "2026-08-20T20:10:51Z",
+            "id": "14f33d4df5cd2c389842297b2e912b8a",
+            "title": "Apple cuts jobs in Siri, Vision Pro immersive video, and gaming teams",
+            "description": "Apple is also laying off employees in its Intelligent Systems Experience, a team within its software engineering organisation responsible for some of the AI features on its devices",
+            "content": "Apple is also laying off employees in its Intelligent Systems Experience, a team within its software engineering organisation responsible for some of the AI features on its devices\nApple is largely shutting down a team focused on gaming for its Visio... [3656 chars]",
+            "url": "https://www.business-standard.com/technology/tech-news/apple-cuts-jobs-in-siri-vision-pro-immersive-video-and-gaming-teams-126082200095_1.html",
+            "image": "https://bsmedia.business-standard.com/_media/bs/img/article/2026-08/22/thumb/fitandfill/1200X628/1787367007-9598.jpg",
+            "publishedAt": "2026-08-22T02:50:53Z",
             "lang": "en",
             "source": {
-                "id": "c4e32b557a3dd75225975f11fb68a3a9",
-                "name": "Forbes",
-                "url": "https://www.forbes.com"
+                "id": "5ed2df194738c4214db138d4e70f2425",
+                "name": "Business Standard",
+                "url": "https://www.business-standard.com"
             }
         },
         {
-            "id": "defd5d043966e64370fca9bc02896e3d",
-            "title": "GTA 6 leak mess deepens as second group surfaces with alleged internal build",
-            "description": "The already murky GTA 6 leak saga appears to have escalated, with a second group claiming access to internal Rockstar material after allegedly phishing an employee in India. The group has shown what it says is an April 2026 build screenshot, development files and material purportedly connected to an Xbox development kit.",
-            "content": "The ongoing GTA 6 leak snafu may have just gotten progressively murkier. A second group, apparently unrelated to the original leaker CyberLeek, is now claiming to have obtained internal Rockstar Games material. It has reportedly shown several pieces ... [1405 chars]",
-            "url": "https://www.notebookcheck.net/GTA-6-leak-mess-deepens-as-second-group-surfaces-with-alleged-internal-build.1374366.0.html",
-            "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/GTA-6-second-leak.png",
-            "publishedAt": "2026-08-20T20:08:00Z",
+            "id": "0da9cf941a3be88bc014f147be1d9122",
+            "title": "Borderlands 4 DLC “Story Pack 2: FL4K and the Last Resort” gets a release date: New Vault Hunter, new map zone and more",
+            "description": "New Vault Hunter “Loveless the Hacker” and a new tropical map zone called “Providence” to arrive.",
+            "content": "Market Mastery\nWebinar by Vishal Malkan\nFind the weak links\nin your portfolio by Vishal Malkan\n“Story Pack 2: FL4K and the Last Resort”, the upcoming DLC for Borderlands 4, has a confirmed release date. The new Borderlands 4 downloadable content will... [1916 chars]",
+            "url": "https://www.moneycontrol.com/technology/borderlands-4-dlc-story-pack-2-fl4k-and-the-last-resort-gets-a-release-date-new-vault-hunter-new-map-zone-and-more-article-14012606.html",
+            "image": "https://images.moneycontrol.com/static-mcnews/2026/08/20260821150307_Borderlands-4-DLC.png",
+            "publishedAt": "2026-08-22T02:00:05Z",
+            "lang": "en",
+            "source": {
+                "id": "d602a2d12746f6ca2f63931f376faf99",
+                "name": "Moneycontrol.com",
+                "url": "https://www.moneycontrol.com"
+            }
+        },
+        {
+            "id": "2048db20a13c6855750a0f5b60884272",
+            "title": "Trump to honour historic Artemis II crew",
+            "description": "The mission followed Artemis I, an uncrewed test flight that travelled around the Moon before returning to Earth.",
+            "content": "Washington: President Donald Trump will award the Congressional Space Medal of Honour to the four astronauts who completed NASA’s Artemis II mission around the Moon, the space agency said Friday.\nNASA astronauts Reid Wiseman, Victor Glover and Christ... [2646 chars]",
+            "url": "https://www.thehansindia.com/news/international/trump-to-honour-historic-artemis-ii-crew-1112511",
+            "image": "https://assets.thehansindia.com/h-upload/2026/08/18/1691189-trump.jpg",
+            "publishedAt": "2026-08-22T00:27:48Z",
+            "lang": "en",
+            "source": {
+                "id": "116a2645295bce1ab4f5e7272581297a",
+                "name": "The Hans India",
+                "url": "https://www.thehansindia.com"
+            }
+        },
+        {
+            "id": "4e9f11c144a42534f22318d7db295114",
+            "title": "'Hoping for a Huge October Surprise, But Not Holding My Breath' - Arc Raiders Players Torn After Embark Delays Future Expeditions Until Early 2027",
+            "description": "\"...if it's what has to be done to improve Expeditions so be it.\"",
+            "content": "Embark Studios has announced that all future Arc Raiders Expeditions have been delayed until early 2027 as it aims to \"return with major improvements\" following community feedback.\n\"We have been carefully reviewing your feedback on Expeditions,\" Emba... [3694 chars]",
+            "url": "https://in.ign.com/arc-raiders/269741/hoping-for-a-huge-october-surprise-but-not-holding-my-breath-arc-raiders-players-torn-after-embark-d",
+            "image": "https://sm.ign.com/t/ign_in/news/h/hoping-for/hoping-for-a-huge-october-surprise-but-not-holding-my-breath_1yt6.1200.jpg",
+            "publishedAt": "2026-08-22T00:24:58Z",
+            "lang": "en",
+            "source": {
+                "id": "ca576fa3e29ba4e38eed45fbadfabea6",
+                "name": "IGN India",
+                "url": "https://in.ign.com"
+            }
+        },
+        {
+            "id": "34e256c9586ee57f140082c00d8b2bfb",
+            "title": "Call of Duty: Modern Warfare 4 Switch 2 60 fps performance impresses in first video",
+            "description": "Early indications are that Modern Warfare 4 beta will meet expectations on the Switch 2. Videos have surfaced showing the Call of Duty game rendering the chaotic action at 60 fps. Still, some textures and animations are a step down from the PS5, Xbox, and PC versions.",
+            "content": "Nintendo loyalists have long awaited the return of a Call of Duty game. With its beta weekend approaching, footage of the Call of Duty: Modern Warfare 4 Switch 2 port has emerged. YouTuber BoTalksGames applauded the shooter’s performance, which targe... [1810 chars]",
+            "url": "https://www.notebookcheck.net/Call-of-Duty-Modern-Warfare-4-Switch-2-60-fps-performance-impresses-in-first-video.1375159.0.html",
+            "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/CallofDutyModernWarfare4Switch2.jpg",
+            "publishedAt": "2026-08-21T21:50:00Z",
             "lang": "en",
             "source": {
                 "id": "6f43ddc905277d3cab59591df0bcaa6d",
@@ -67,93 +112,48 @@
             }
         },
         {
-            "id": "48849ecd45dd8bcfc7145d0aa95e7afc",
-            "title": "Microsoft Surface and other Windows on Arm PCs can't use Outlook or Teams right now",
-            "description": "Users report both apps crashing immediately, leaving them unable to access mail or meetings. It’s a serious issue for devices that Microsoft positions as the future of Windows.",
-            "content": "A Windows 11 update appears to break Microsoft Teams and Outlook on Windows on Arm PCs. Issues started popping up after the rollout of KB5121003, which began shipping this month on Patch Tuesday.\nBrian Stringfellow shared details about the problem th... [1855 chars]",
-            "url": "https://www.windowscentral.com/hardware/surface/microsoft-surface-and-other-windows-on-arm-pcs-cant-use-outlook-or-teams-right-now",
-            "image": "https://cdn.mos.cms.futurecdn.net/dx7zcvNknwhdADAZXFnFNa-2560-80.jpg",
-            "publishedAt": "2026-08-20T19:56:45Z",
+            "id": "552e02b9d9cef7deb63bfe5505dfc080",
+            "title": "Activision reveals system requirements for Modern Warfare 4 Beta on PC",
+            "description": "Activision has released detailed system requirements for the upcoming Call of Duty: Modern Warfare 4 Beta. Along with the minimum and recommended system requirements, the publisher has also announced a new shader pre-loading feature to go with its TPM 2.0 and Secure Boot requirements for anti-cheat software.",
+            "content": "Activision has released the official PC system requirements for the Call of Duty: Modern Warfare 4 Beta. Unsurprisingly for some, the minimum end of this tier is really low-spec, and most gamers won’t have a hard time trying to run the beta. At a min... [2003 chars]",
+            "url": "https://www.notebookcheck.net/Activision-reveals-system-requirements-for-Modern-Warfare-4-Beta-on-PC.1375163.0.html",
+            "image": "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc5/MW4-BETA-Activision.jpg.jpeg",
+            "publishedAt": "2026-08-21T18:41:00Z",
             "lang": "en",
             "source": {
-                "id": "381257850cf94bc78a1ee054a8bb7748",
-                "name": "Windows Central",
-                "url": "https://www.windowscentral.com"
+                "id": "6f43ddc905277d3cab59591df0bcaa6d",
+                "name": "Notebookcheck",
+                "url": "https://www.notebookcheck.net"
             }
         },
         {
-            "id": "4a6c7968c95b1bf048bbbce47210c463",
-            "title": "Call of Duty: Modern Warfare 4 Early Access Beta Start Time and Date (Countdown Timer)",
-            "description": "Waiting for the Call of Duty Modern Warfare 4 beta weekends? Check out the early access and open beta start times and dates right here.",
-            "content": "Call of Duty: Modern Warfare 4 Early Access Beta is almost here, and players are waiting for the moment to join the chaos. The first Beta will feature tons of new content, including a mission from Call of Duty: Modern Warfare 4’s campaign. If you wer... [2209 chars]",
-            "url": "https://beebom.com/call-of-duty-modern-warfare-4-early-access-beta-start-time-date-countdown-timer/",
-            "image": "https://static.beebom.com/wp-content/uploads/2026/08/call-of-duty-modern-warfare-4-early-access-beta-start-times-featured-image.jpeg",
-            "publishedAt": "2026-08-20T19:26:43Z",
+            "id": "82c3163ea3c18c6b95a27bdb5fee97df",
+            "title": "Meta Launches AI-Powered Mac App And Expands Vibe-Coded Gaming Platform Pocket",
+            "description": "Meta announced a new Mac application for Meta AI featuring system-wide dictation and screen-context awareness powered by its Muse Spark model, joining",
+            "content": "Meta announced a new Mac application for Meta AI featuring system-wide dictation and screen-context awareness powered by its Muse Spark model, joining similar tools from Wispr Flow and Google’s Gemini app. The release accompanied a broader business-f... [1102 chars]",
+            "url": "https://theaiinsider.tech/2026/08/21/meta-launches-ai-powered-mac-app-and-expands-vibe-coded-gaming-platform-pocket/",
+            "image": "https://theaiinsider.tech/wp-content/uploads/2026/08/mr26tqghgmc-1.jpg",
+            "publishedAt": "2026-08-21T18:22:03Z",
             "lang": "en",
             "source": {
-                "id": "8a3877d2249e51ed04e9995e5f897cbb",
-                "name": "Beebom",
-                "url": "https://beebom.com"
+                "id": "7a5ba58a0a9c0c1adfee054c37e4b5b2",
+                "name": "AI Insider",
+                "url": "https://theaiinsider.tech"
             }
         },
         {
-            "id": "f0ca2f12753cbfaf2a21d6f2aaede47f",
-            "title": "Google shares new Pixel 11 videos to hype up the new hardware",
-            "description": "Take a look at some of the features that Google thinks are the Pixel 11 Pro's biggest selling points.",
-            "content": "Joe Maring / Android Authority\nTL;DR\nGoogle launched the Pixel 11 series last week, opening pre-order on August 12.\nToday marks the actual beginning of Pixel 11 retail availability.\nGoogle’s publishing a series of three new feature-highlight videos t... [2708 chars]",
-            "url": "https://www.androidauthority.com/google-pixel-11-videos-3701248/",
-            "image": "https://www.androidauthority.com/wp-content/uploads/2026/08/google-pixel-11-pro-canyon-6-scaled.jpg",
-            "publishedAt": "2026-08-20T18:56:00Z",
+            "id": "cddd40226d3aadf50af581173c0a68ba",
+            "title": "Take-Two Subpoenas Microsoft and Discord Over GTA 6 Leaks",
+            "description": "Take-Two has filed federal court subpoenas against Microsoft and Discord, seeking records to identify who leaked Grand Theft Auto VI gameplay footage",
+            "content": "Take-Two Interactive has asked a US federal court to subpoena Microsoft and Discord for records that could identify the people behind a wave of leaked Grand Theft Auto VI footage.\nThe petitions, filed with the Southern District Court of New York on A... [1982 chars]",
+            "url": "https://t2online.in/tech/gaming/take-two-subpoenas-microsoft-and-discord-to-identify-gta-vi-leaker/2007423",
+            "image": "https://images.t2online.in/cdn-cgi/image/width=1200,fit=pad,gravity=auto,quality=50,format=auto/https://apis.t2online.in/getImageStream/8736/1787335832284.jpg",
+            "publishedAt": "2026-08-21T18:08:00Z",
             "lang": "en",
             "source": {
-                "id": "8a46bf03bf6da851efc8bb3bdb7b26e8",
-                "name": "Android Authority",
-                "url": "https://www.androidauthority.com"
-            }
-        },
-        {
-            "id": "9319a0e931c638fdfacc01685d9e2911",
-            "title": "Get Ready: How to Secure Your Call of Duty: Modern Warfare 4 Beta Access",
-            "description": "Excited for the next big Call of Duty release? You don't need to wait for the October 23 release date if you want to start playing Modern Warfare 4 early.",
-            "content": "Call of Duty: Modern Warfare 4, the next big release in Activision's long-running shooter franchise, comes out on October 23, 2026. But if you can't wait that long to get your hands on a new COD, you may not have to. By signing up for the Early Acces... [3762 chars]",
-            "url": "https://www.pcmag.com/news/get-ready-how-to-secure-your-call-of-duty-modern-warfare-4-beta-access",
-            "image": "https://i.pcmag.com/imagery/articles/03dKSjK2kOyJTPW47xrxPUD-2.fit_lim.size_1200x630.v1787244002.png",
-            "publishedAt": "2026-08-20T18:01:24Z",
-            "lang": "en",
-            "source": {
-                "id": "1af0c07097d5cf01dc8beca711d490d1",
-                "name": "PCMag",
-                "url": "https://www.pcmag.com"
-            }
-        },
-        {
-            "id": "6881bbdd7d1ca65c817a8385bb900382",
-            "title": "Samsung to Increase Foldable Smartphone Prices in India",
-            "description": "Samsung set to increase foldable smartphone prices in India soon. Discover how this move could impact your next tech upgrade and market trends.",
-            "content": "Launch of Samsung Galaxy Z Fold 8 Ultra, Fold 8, and Flip 8: Pricing and Specifications in India\nIn a bold market maneuver, Samsung has announced an impending price hike for its flagship foldable smartphones in India, encompassing the Galaxy Z Fold8 ... [2759 chars]",
-            "url": "https://www.rswebsols.com/news/samsung-poised-to-raise-prices-of-foldable-smartphones-in-india/",
-            "image": "https://cdn.rswebsols.com/wp-content/uploads/2026/07/Samsung-Galaxy-Z-Fold-8-Ultra.jpg",
-            "publishedAt": "2026-08-20T18:00:00Z",
-            "lang": "en",
-            "source": {
-                "id": "e93ec0ff108aa69fb928269fe0910a22",
-                "name": "RS Web Solutions",
-                "url": "https://www.rswebsols.com"
-            }
-        },
-        {
-            "id": "b25c219c977d4a0f3a9177b23efb781a",
-            "title": "Samsung DualVent Microwave Promises Better Kitchen Fume Capture",
-            "description": "Samsung DualVent microwave brings front and bottom ventilation, up to 82% fume capture, Auto Connectivity and a fingerprint-resistant finish.",
-            "content": "Samsung has just released a new Over-the-Range Microwave, the Samsung DualVent microwave made to deal with a specific weak point you usually see with standard microwave venting systems- you know the ones that struggle with cooking fumes coming from t... [7630 chars]",
-            "url": "https://techgenyz.com/samsung-dualvent-microwave-82-percent-fume-capture/",
-            "image": "https://techgenyz.com/wp-content/uploads/2026/08/samsung-microwave.webp",
-            "publishedAt": "2026-08-20T17:50:25Z",
-            "lang": "en",
-            "source": {
-                "id": "9710fd0a8060ce716a3567901da14e9a",
-                "name": "Techgenyz",
-                "url": "https://techgenyz.com"
+                "id": "92bb3036dd91749dde09b90d23c9a7ba",
+                "name": "t2ONLINE",
+                "url": "https://t2online.in"
             }
         }
     ]
