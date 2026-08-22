@@ -51,6 +51,7 @@ app.add_middleware(
 # Ensure output directories exist
 os.makedirs(os.path.join(PROJECT_ROOT, "output", "Report"), exist_ok=True)
 os.makedirs(os.path.join(PROJECT_ROOT, "output", "Podcast"), exist_ok=True)
+os.makedirs(os.path.join(PROJECT_ROOT, "output", "Bookmarks"), exist_ok=True)
 
 
 # --- Request Models (Pydantic) ---
@@ -66,6 +67,10 @@ class AutomaticNewsRequest(BaseModel):
     language: str = "English"
     lang_code: str = "en"
     voice: str = "en-US-ChristopherNeural"
+
+
+class BookmarkRequest(BaseModel):
+    filename: str
 
 
 # --- API Routes ---
@@ -221,6 +226,95 @@ def serve_audio(filename: str):
     if os.path.exists(file_path):
         return FileResponse(file_path, media_type="audio/mpeg")
     raise HTTPException(status_code=404, detail="Audio file not found")
+
+
+@app.get("/api/bookmarks")
+def get_bookmarks():
+    bookmarks_file = os.path.join(PROJECT_ROOT, "output", "Bookmarks", "bookmarks.json")
+    if os.path.exists(bookmarks_file):
+        try:
+            with open(bookmarks_file, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            print(f"Error reading bookmarks: {e}")
+    return []
+
+
+@app.post("/api/bookmarks/toggle")
+def toggle_bookmark_api(req: BookmarkRequest):
+    filename = os.path.basename(req.filename)
+    podcast_dir = os.path.join(PROJECT_ROOT, "output", "Podcast")
+    bookmarks_dir = os.path.join(PROJECT_ROOT, "output", "Bookmarks")
+    bookmarks_json = os.path.join(bookmarks_dir, "bookmarks.json")
+
+    os.makedirs(bookmarks_dir, exist_ok=True)
+
+    existing = []
+    if os.path.exists(bookmarks_json):
+        try:
+            with open(bookmarks_json, "r", encoding="utf-8") as f:
+                existing = json.load(f)
+                if not isinstance(existing, list):
+                    existing = []
+        except Exception:
+            existing = []
+
+    is_bookmarked = any(b.get("filename") == filename for b in existing)
+
+    src_audio = os.path.join(podcast_dir, filename)
+    dst_audio = os.path.join(bookmarks_dir, filename)
+
+    if is_bookmarked:
+        existing = [b for b in existing if b.get("filename") != filename]
+        if os.path.exists(dst_audio):
+            try:
+                os.remove(dst_audio)
+            except Exception:
+                pass
+        action = "removed"
+    else:
+        if os.path.exists(src_audio):
+            import shutil
+            shutil.copy2(src_audio, dst_audio)
+
+        category = "General"
+        language = "English"
+        clean_name = filename.replace("['", "").replace("']", "")
+        if "NewsPodcast" in clean_name:
+            parts = clean_name.split("NewsPodcast_")
+            category = parts[0].replace("News", "")
+            if len(parts) > 1:
+                lang_parts = parts[1].split("_")
+                language = lang_parts[0]
+        elif "Podcast" in clean_name:
+            parts = clean_name.split("Podcast")
+            category = parts[0]
+
+        entry = {
+            "filename": filename,
+            "url": f"/api/audio/bookmarks/{filename}",
+            "date": datetime.now().strftime("%b %d, %Y - %I:%M %p"),
+            "category": category,
+            "language": language
+        }
+        existing.append(entry)
+        action = "added"
+
+    with open(bookmarks_json, "w", encoding="utf-8") as f:
+        json.dump(existing, f, indent=4, ensure_ascii=False)
+
+    return {"success": True, "action": action, "bookmarks": existing}
+
+
+@app.get("/api/audio/bookmarks/{filename}")
+def serve_bookmark_audio(filename: str):
+    file_path = os.path.join(PROJECT_ROOT, 'output', 'Bookmarks', filename)
+    if os.path.exists(file_path):
+        return FileResponse(file_path, media_type="audio/mpeg")
+    fallback_path = os.path.join(PROJECT_ROOT, 'output', 'Podcast', filename)
+    if os.path.exists(fallback_path):
+        return FileResponse(fallback_path, media_type="audio/mpeg")
+    raise HTTPException(status_code=404, detail="Bookmark audio file not found")
 
 
 # Mount UI static files at root AFTER all API routes

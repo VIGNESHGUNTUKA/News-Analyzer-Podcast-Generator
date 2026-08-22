@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="app-layout">
         <!-- Sidebar Navigation -->
@@ -20,24 +24,31 @@
                 <div class="brand-logo">
                     <svg class="logo-icon-svg" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                         <!-- Mic body -->
-                        <rect x="15" y="4" width="10" height="18" rx="5" fill="var(--primary)"/>
+                        <rect x="15" y="4" width="10" height="18" rx="5" fill="var(--primary)" />
                         <!-- Mic arc -->
-                        <path d="M11 18 C11 25, 29 25, 29 18" stroke="var(--primary)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <path d="M11 18 C11 25, 29 25, 29 18" stroke="var(--primary)" stroke-width="2.5" fill="none"
+                            stroke-linecap="round" />
                         <!-- Mic stand -->
-                        <line x1="20" y1="25" x2="20" y2="32" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round"/>
-                        <line x1="14" y1="32" x2="26" y2="32" stroke="var(--primary)" stroke-width="2.5" stroke-linecap="round"/>
+                        <line x1="20" y1="25" x2="20" y2="32" stroke="var(--primary)" stroke-width="2.5"
+                            stroke-linecap="round" />
+                        <line x1="14" y1="32" x2="26" y2="32" stroke="var(--primary)" stroke-width="2.5"
+                            stroke-linecap="round" />
                         <!-- Sound waves left -->
-                        <path d="M8 10 C5 15, 5 21, 8 26" stroke="var(--primary)" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
-                        <path d="M4 8 C0 15, 0 21, 4 28" stroke="var(--primary)" stroke-width="1.5" fill="none" opacity="0.2" stroke-linecap="round"/>
+                        <path d="M8 10 C5 15, 5 21, 8 26" stroke="var(--primary)" stroke-width="1.5" fill="none"
+                            opacity="0.4" stroke-linecap="round" />
+                        <path d="M4 8 C0 15, 0 21, 4 28" stroke="var(--primary)" stroke-width="1.5" fill="none"
+                            opacity="0.2" stroke-linecap="round" />
                         <!-- Sound waves right -->
-                        <path d="M32 10 C35 15, 35 21, 32 26" stroke="var(--primary)" stroke-width="1.5" fill="none" opacity="0.4" stroke-linecap="round"/>
-                        <path d="M36 8 C40 15, 40 21, 36 28" stroke="var(--primary)" stroke-width="1.5" fill="none" opacity="0.2" stroke-linecap="round"/>
+                        <path d="M32 10 C35 15, 35 21, 32 26" stroke="var(--primary)" stroke-width="1.5" fill="none"
+                            opacity="0.4" stroke-linecap="round" />
+                        <path d="M36 8 C40 15, 40 21, 36 28" stroke="var(--primary)" stroke-width="1.5" fill="none"
+                            opacity="0.2" stroke-linecap="round" />
                     </svg>
                     <h1>News<span>Pod</span></h1>
                 </div>
                 <div class="brand-badge">
                     <div class="badge-avatar">N</div>
-                    <span class="badge-text">AI-Powered News Podcast Generator</span>
+                    <span class="badge-text">Multilingual News Podcast Generator</span>
                 </div>
             </div>
 
@@ -75,7 +86,7 @@
                 <!-- Stay Updated Card -->
                 <div class="newsletter-card">
                     <h3><i data-lucide="bell"></i> Stay Updated</h3>
-                    <p>Get the latest news and AI-generated podcasts in your inbox daily.</p>
+                    <p>Get the latest news and personalized podcasts in your preferred language.</p>
                 </div>
             </nav>
         </aside>
@@ -144,7 +155,8 @@
                     <div id="manual-workspace" class="workspace-pane">
                         <div class="input-card">
                             <label for="news-textarea">Paste News Article Content</label>
-                            <textarea id="news-textarea" placeholder="Paste your article or text here (minimum 20 words for best analysis)..."></textarea>
+                            <textarea id="news-textarea"
+                                placeholder="Paste your article or text here (minimum 20 words for best analysis)..."></textarea>
                         </div>
                     </div>
 
@@ -154,10 +166,11 @@
                             <div class="card-header-flex">
                                 <div>
                                     <label><i data-lucide="globe"></i> Select Automatic News Category</label>
-                                    <p class="card-desc">Choose a category below. AI will fetch top headlines dynamically matching your selected category from global news networks.</p>
+                                    <p class="card-desc">Choose a category below to fetch the latest news from GNews and
+                                        generate a personalized podcast.</p>
                                 </div>
                             </div>
-                            
+
                             <div class="category-grid" id="category-cards-container">
                                 <div class="category-card" data-category="Sports">
                                     <div class="category-icon-wrapper">
@@ -290,10 +303,10 @@
                                 <option value="Tamil" data-code="ta">Tamil</option>
                             </select>
                         </div>
-                        
+
 
                         <div class="preference-item">
-                            <label><i data-lucide="mic-2"></i> AI Voice</label>
+                            <label><i data-lucide="mic-2"></i> Podcast Voice</label>
                             <select id="pref-voice">
                                 <!-- Dynamically populated based on language selection -->
                                 <option value="te-IN-ShrutiNeural">Female - Shruti (Natural)</option>
@@ -322,7 +335,7 @@
                     <!-- Left Column: Today's Top Headlines -->
                     <div class="feed-column">
                         <div class="column-header">
-                            <h3>Today's Top Headlines</h3>
+                            <h3>Headlines</h3>
                             <a href="#" class="view-all">View All</a>
                         </div>
                         <div class="headlines-list" id="headlines-container">
@@ -348,16 +361,19 @@
                 <section class="section-container bookmarks-section" id="bookmarks-section">
                     <h3 class="section-title"><i data-lucide="bookmark"></i> Bookmarked Podcasts</h3>
                     <div class="podcasts-list" id="bookmarks-container">
-                        <div class="podcast-skeleton">No bookmarked podcasts yet. Click the bookmark icon on any podcast to save it!</div>
+                        <div class="podcast-skeleton">No bookmarked podcasts yet. Click the bookmark icon on any podcast
+                            to save it!</div>
                     </div>
                 </section>
 
                 <!-- About Us Section -->
                 <section class="section-container about-us-section" id="about-us-section">
-                    <h3 class="section-title" style="color: var(--primary);"><i data-lucide="info"></i> About Us</h3>
+                    <h3 class="section-title" style="color:#ffffff;"><i data-lucide="info"></i> About Us</h3>
                     <div class="input-card">
-                        <p class="card-desc" style="font-size: 18px; line-height: 1.6; color: #ffffff; font-weight: 700;">
-                            NewsPod transforms the latest news from GNews into personalized podcasts. Choose your category, language, and voice, then listen to your news anytime, anywhere.
+                        <p class="card-desc"
+                            style="font-size: 18px; line-height: 1.6; color: #ffffff; font-weight: 400;">
+                            NewsPod transforms the latest news from GNews into personalized podcasts. Choose your
+                            category, language, and voice, then listen to your news anytime, anywhere.
                         </p>
                     </div>
                 </section>
@@ -386,7 +402,7 @@
                     <button class="icon-btn play-btn" id="player-play-pause"><i data-lucide="play"></i></button>
                     <button class="icon-btn secondary-btn" id="player-next"><i data-lucide="skip-forward"></i></button>
                 </div>
-                
+
                 <div class="player-progress-bar">
                     <span id="player-current-time">00:00</span>
                     <div class="progress-track" id="progress-track">
@@ -410,7 +426,7 @@
                     <span class="v-bar"></span>
                     <span class="v-bar"></span>
                 </div>
-                
+
                 <div class="volume-container">
                     <button class="icon-btn volume-btn" id="player-mute-btn"><i data-lucide="volume-2"></i></button>
                     <div class="volume-track" id="volume-track">
@@ -426,4 +442,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
